@@ -186,7 +186,7 @@ void ConnectionLoader::createZcashConf() {
     QTextStream out(&file); 
     
     out << "server=1\n";
-    out << "addnode=mainnet.z.cash\n";
+    out << "addnode=185.26.99.136\n";
     out << "rpcuser=zec-qt-wallet\n";
     out << "rpcpassword=" % randomPassword() << "\n";
 
