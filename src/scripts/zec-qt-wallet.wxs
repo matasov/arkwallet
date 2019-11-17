@@ -55,7 +55,7 @@
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 			<Component Id="ProductComponent" Guid="0D210F5A-53E0-4E7E-CAAD-15A26995505E">
-                <File Source="zecwallet.exe" KeyPath="yes">
+                <File Source="arkwallet.exe" KeyPath="yes">
                     <Shortcut Id="startMenuShotcut" Advertise="yes" Directory="ApplicationProgramsFolder"
                         Name="ArnakWallet" WorkingDirectory="INSTALLFOLDER" Icon="zecqtwalleticon.exe" >
                     </Shortcut>
@@ -69,10 +69,10 @@
                     <RegistryValue Type="string" Name="URL Protocol" Value=""/>
                     <RegistryValue Type="string" Value="URL:zcash URI protocol"/>
                     <RegistryKey Key="DefaultIcon">
-                    <RegistryValue Type="string" Value="zecwallet.exe" />
+                    <RegistryValue Type="string" Value="arkwallet.exe" />
                     </RegistryKey>
                     <RegistryKey Key="shell\open\command">
-                    <RegistryValue Type="string" Value="&quot;[INSTALLFOLDER]zecwallet.exe&quot; &quot;%1&quot;" />
+                    <RegistryValue Type="string" Value="&quot;[INSTALLFOLDER]arkwallet.exe&quot; &quot;%1&quot;" />
                     </RegistryKey>
                 </RegistryKey>
 			</Component>

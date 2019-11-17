@@ -2,12 +2,12 @@
 Name=ArnakWallet
 Comment=Full node and wallet for Zcash
 GenericName=Wallet
-Exec=/usr/local/bin/zecwallet %u
-Icon=zecwallet.xpm
+Exec=/usr/local/bin/arkwallet %u
+Icon=arkwallet.xpm
 Type=Application
 StartupNotify=true
-StartupWMClass=zecwallet
+StartupWMClass=arkwallet
 Categories=Utility;
 MimeType=x-scheme-handler/zcash;
-Keywords=zecwallet;
+Keywords=arkwallet;
 

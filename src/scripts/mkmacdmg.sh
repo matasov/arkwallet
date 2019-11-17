@@ -70,7 +70,7 @@ export PATH=$PATH:/usr/local/bin
 #Clean
 echo -n "Cleaning..............."
 make distclean >/dev/null 2>&1
-rm -f artifacts/macOS-zecwallet-v$APP_VERSION.dmg
+rm -f artifacts/macOS-arkwallet-v$APP_VERSION.dmg
 echo "[OK]"
 
 
@@ -88,35 +88,35 @@ echo "[OK]"
 #Qt deploy
 echo -n "Deploying.............."
 mkdir artifacts >/dev/null 2>&1
-rm -f artifcats/zecwallet.dmg >/dev/null 2>&1
+rm -f artifcats/arkwallet.dmg >/dev/null 2>&1
 rm -f artifacts/rw* >/dev/null 2>&1
-cp $ZCASH_DIR/src/arnakd zecwallet.app/Contents/MacOS/
-cp $ZCASH_DIR/src/arnak-cli zecwallet.app/Contents/MacOS/
-$QT_PATH/bin/macdeployqt zecwallet.app 
-mv zecwallet.app ArnakWallet.app
+cp $ZCASH_DIR/src/arnakd arkwallet.app/Contents/MacOS/
+cp $ZCASH_DIR/src/arnak-cli arkwallet.app/Contents/MacOS/
+$QT_PATH/bin/macdeployqt arkwallet.app 
+mv arkwallet.app ArnakWallet.app
 codesign --deep --force --verify --verbose -s "$CERTIFICATE" --options runtime --timestamp ArnakWallet.app
 echo "[OK]"
 
 # Code Signing Note:
 # On MacOS, you still need to run these 3 commands:
-# xcrun altool --notarize-app -t osx -f macOS-zecwallet-v0.8.0.dmg --primary-bundle-id="com.yourcompany.zecwallet" -u "apple developer id@email.com" -p "one time password" 
+# xcrun altool --notarize-app -t osx -f macOS-arkwallet-v0.8.0.dmg --primary-bundle-id="com.yourcompany.arkwallet" -u "apple developer id@email.com" -p "one time password" 
 # xcrun altool --notarization-info <output from pervious command> -u "apple developer id@email.com" -p "one time password" 
 #...wait for the notarization to finish...
-# xcrun stapler staple macOS-zecwallet-v0.8.0.dmg
+# xcrun stapler staple macOS-arkwallet-v0.8.0.dmg
 
 echo -n "Building dmg..........."
 
-create-dmg --volname "ArnakWallet-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "ArnakWallet.app" 200 190  --app-drop-link 600 185 --hide-extension "ArnakWallet.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-zecwallet-v$APP_VERSION.dmg ArnakWallet.app >/dev/null 2>&1
+create-dmg --volname "ArnakWallet-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "ArnakWallet.app" 200 190  --app-drop-link 600 185 --hide-extension "ArnakWallet.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-arkwallet-v$APP_VERSION.dmg ArnakWallet.app >/dev/null 2>&1
 
 #mkdir bin/dmgbuild >/dev/null 2>&1
 #sed "s/RELEASE_VERSION/${APP_VERSION}/g" res/appdmg.json > bin/dmgbuild/appdmg.json
 #cp res/logo.icns bin/dmgbuild/
 #cp res/dmgbg.png bin/dmgbuild/
 
-#cp -r zecwallet.app bin/dmgbuild/
+#cp -r arkwallet.app bin/dmgbuild/
 
-#appdmg --quiet bin/dmgbuild/appdmg.json artifacts/macOS-zecwallet-v$APP_VERSION.dmg >/dev/null
-if [ ! -f artifacts/macOS-zecwallet-v$APP_VERSION.dmg ]; then
+#appdmg --quiet bin/dmgbuild/appdmg.json artifacts/macOS-arkwallet-v$APP_VERSION.dmg >/dev/null
+if [ ! -f artifacts/macOS-arkwallet-v$APP_VERSION.dmg ]; then
     echo "[ERROR]"
     exit 1
 fi
