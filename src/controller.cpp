@@ -78,11 +78,11 @@ void Controller::setEZcashd(QProcess* p) {
     ezcashd = p;
     
     if (ezcashd && ui->tabWidget->widget(4) == nullptr) {
-        ui->tabWidget->addTab(main->zcashdtab, "zcashd");
+        ui->tabWidget->addTab(main->zcashdtab, "arnakd");
     }
 }
 
-// Called when a connection to zcashd is available. 
+// Called when a connection to arnakd is available. 
 void Controller::setConnection(Connection* c) {
     if (c == nullptr) return;
 
@@ -197,7 +197,7 @@ void Controller::refreshReceivedZTrans(QList<QString> zaddrs) {
     );
 } 
 
-/// This will refresh all the balance data from zcashd
+/// This will refresh all the balance data from arnakd
 void Controller::refresh(bool force) {
     if (!zrpc->haveConnection()) 
         return noConnection();
@@ -276,7 +276,7 @@ void Controller::getInfoThenRefresh(bool force) {
             Settings::getInstance()->setSyncing(isSyncing);
             Settings::getInstance()->setBlockNumber(blockNumber);
 
-            // Update zcashd tab if it exists
+            // Update arnakd tab if it exists
             if (ezcashd) {
                 if (isSyncing) {
                     QString txt = QString::number(blockNumber);
@@ -317,10 +317,10 @@ void Controller::getInfoThenRefresh(bool force) {
             auto zecPrice = Settings::getInstance()->getUSDFromZecAmount(1);
             QString tooltip;
             if (connections > 0) {
-                tooltip = QObject::tr("Connected to zcashd");
+                tooltip = QObject::tr("Connected to arnakd");
             }
             else {
-                tooltip = QObject::tr("zcashd has no peer connections");
+                tooltip = QObject::tr("arnakd has no peer connections");
             }
             tooltip = tooltip % "(v " % QString::number(Settings::getInstance()->getZcashdVersion()) % ")";
 
@@ -332,14 +332,14 @@ void Controller::getInfoThenRefresh(bool force) {
         });
 
     }, [=](QNetworkReply* reply, const json&) {
-        // zcashd has probably disappeared.
+        // arnakd has probably disappeared.
         this->noConnection();
 
         // Prevent multiple dialog boxes, because these are called async
         static bool shown = false;
         if (!shown && prevCallSucceeded) { // show error only first time
             shown = true;
-            QMessageBox::critical(main, QObject::tr("Connection Error"), QObject::tr("There was an error connecting to zcashd. The error was") + ": \n\n"
+            QMessageBox::critical(main, QObject::tr("Connection Error"), QObject::tr("There was an error connecting to arnakd. The error was") + ": \n\n"
                 + reply->errorString(), QMessageBox::StandardButton::Ok);
             shown = false;
         }
@@ -415,7 +415,7 @@ bool Controller::processUnspent(const json& reply, QMap<QString, double>* balanc
  * Refresh the turnstile migration status
  */
 void Controller::refreshMigration() {
-    // Turnstile migration is only supported in zcashd v2.0.5 and above
+    // Turnstile migration is only supported in arnakd v2.0.5 and above
     if (Settings::getInstance()->getZcashdVersion() < 2000552 ||
         !Settings::getInstance()->isSaplingActive())    // Only if sapling is active
         return;
@@ -771,9 +771,9 @@ void Controller::refreshZECPrice() {
 }
 
 void Controller::shutdownZcashd() {
-    // Shutdown embedded zcashd if it was started
+    // Shutdown embedded arnakd if it was started
     if (ezcashd == nullptr || ezcashd->processId() == 0 || !zrpc->haveConnection()) {
-        // No zcashd running internally, just return
+        // No arnakd running internally, just return
         return;
     }
 
@@ -791,7 +791,7 @@ void Controller::shutdownZcashd() {
     connD.setupUi(&d);
     connD.topIcon->setBasePixmap(QIcon(":/icons/res/icon.ico").pixmap(256, 256));
     connD.status->setText(QObject::tr("Please wait for ArnakWallet to exit"));
-    connD.statusDetail->setText(QObject::tr("Waiting for zcashd to exit"));
+    connD.statusDetail->setText(QObject::tr("Waiting for arnakd to exit"));
 
     QTimer waiter(main);
 
@@ -803,7 +803,7 @@ void Controller::shutdownZcashd() {
 
         if ((ezcashd->atEnd() && ezcashd->processId() == 0) ||
             waitCount > 30 || 
-            getConnection()->config->zcashDaemon)  {   // If zcashd is daemon, then we don't have to do anything else
+            getConnection()->config->zcashDaemon)  {   // If arnakd is daemon, then we don't have to do anything else
             qDebug() << "Ended";
             waiter.stop();
             QTimer::singleShot(1000, [&]() { d.accept(); });

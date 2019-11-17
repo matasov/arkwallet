@@ -82,7 +82,7 @@ private:
 };
 
 /**
- * Represents a connection to a zcashd. It may even start a new zcashd if needed.
+ * Represents a connection to a arnakd. It may even start a new arnakd if needed.
  * This is also a UI class, so it may show a dialog waiting for the connection.
 */
 class Connection {

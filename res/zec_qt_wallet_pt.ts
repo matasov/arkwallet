@@ -262,8 +262,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="908"/>
-        <source>zcashd</source>
-        <translation>zcashd</translation>
+        <source>arnakd</source>
+        <translation>arnakd</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="938"/>
@@ -430,17 +430,17 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="511"/>
-        <source>Tor configuration is available only when running an embedded zcashd.</source>
+        <source>Tor configuration is available only when running an embedded arnakd.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="550"/>
-        <source>You&apos;re using an external zcashd. Please restart zcashd with -rescan</source>
+        <source>You&apos;re using an external arnakd. Please restart arnakd with -rescan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="553"/>
-        <source>You&apos;re using an external zcashd. Please restart zcashd with -reindex</source>
+        <source>You&apos;re using an external arnakd. Please restart arnakd with -reindex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -535,7 +535,7 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="290"/>
-        <source>zcashd is not yet ready. Please wait for the UI to load</source>
+        <source>arnakd is not yet ready. Please wait for the UI to load</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -565,8 +565,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="928"/>
-        <source>The keys will be imported into your connected zcashd node</source>
-        <translation>As chaves serão importadas em seu nó zcashd conectado</translation>
+        <source>The keys will be imported into your connected arnakd node</source>
+        <translation>As chaves serão importadas em seu nó arnakd conectado</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="978"/>
@@ -590,8 +590,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1002"/>
-        <source>You need to back it up from the machine zcashd is running on</source>
-        <translation>Você precisar salvar a partir da máquina que zcashd está rodando</translation>
+        <source>You need to back it up from the machine arnakd is running on</source>
+        <translation>Você precisar salvar a partir da máquina que arnakd está rodando</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1006"/>
@@ -844,7 +844,7 @@ não se parece com um z-Address</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="81"/>
-        <source>If enabled, zcashd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
+        <source>If enabled, arnakd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -931,52 +931,52 @@ não se parece com um z-Address</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="52"/>
-        <source>Starting embedded zcashd</source>
-        <translation>Iniciando zcashd acoplado</translation>
+        <source>Starting embedded arnakd</source>
+        <translation>Iniciando arnakd acoplado</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
-        <source>zcashd is set to run as daemon</source>
-        <translation>erro no zcashd</translation>
+        <source>arnakd is set to run as daemon</source>
+        <translation>erro no arnakd</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
-        <source>Waiting for zcashd</source>
-        <translation>Esperando pelo zcashd</translation>
+        <source>Waiting for arnakd</source>
+        <translation>Esperando pelo arnakd</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="77"/>
-        <source>You have zcashd set to start as a daemon, which can cause problems with ArnakWallet
+        <source>You have arnakd set to start as a daemon, which can cause problems with ArnakWallet
 
 .Please remove the following line from your zcash.conf and restart ArnakWallet
 daemon=1</source>
-        <translation>Você tem zcashd configurado como daemon, o que pode causar problemas com a ArnakWallet
+        <translation>Você tem arnakd configurado como daemon, o que pode causar problemas com a ArnakWallet
  Por favor, remova a seguinte linha do seu zcash.conf e reinicie a ArnakWallet:
 daemon=1</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="82"/>
-        <source>Couldn&apos;t start the embedded zcashd.
+        <source>Couldn&apos;t start the embedded arnakd.
 
 Please try restarting.
 
-If you previously started zcashd with custom arguments, you might need to reset zcash.conf.
+If you previously started arnakd with custom arguments, you might need to reset zcash.conf.
 
-If all else fails, please run zcashd manually.</source>
-        <translation>Não foi possível iniciar o zcashd acoplado.
+If all else fails, please run arnakd manually.</source>
+        <translation>Não foi possível iniciar o arnakd acoplado.
 Por favor, tenta reiniciar.
-Se você iniciou zcashd anteriormente com parâmetros customizados você pode precisar resetar seu zcash.conf.
+Se você iniciou arnakd anteriormente com parâmetros customizados você pode precisar resetar seu zcash.conf.
 
-Se ainda assim não der certo, por favor rode zcashd manualmente.</translation>
+Se ainda assim não der certo, por favor rode arnakd manualmente.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="93"/>
-        <source>Couldn&apos;t connect to zcashd configured in zcash.conf.
+        <source>Couldn&apos;t connect to arnakd configured in zcash.conf.
 
-Not starting embedded zcashd because --no-embedded was passed</source>
-        <translation>Não foi possível conectar ao zcashd configurado em zcash.conf.
+Not starting embedded arnakd because --no-embedded was passed</source>
+        <translation>Não foi possível conectar ao arnakd configurado em zcash.conf.
 
-Não iniciando zcashd acoplado porque nenhum foi passado como parâmetro</translation>
+Não iniciando arnakd acoplado porque nenhum foi passado como parâmetro</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="146"/>
@@ -1056,18 +1056,18 @@ Não iniciando zcashd acoplado porque nenhum foi passado como parâmetro</transl
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="684"/>
-        <source>Connected to zcashd</source>
-        <translation>Conectado ao zcashd</translation>
+        <source>Connected to arnakd</source>
+        <translation>Conectado ao arnakd</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="687"/>
-        <source>zcashd has no peer connections</source>
+        <source>arnakd has no peer connections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="706"/>
-        <source>There was an error connecting to zcashd. The error was</source>
-        <translation>Ocorreu um erro conectando ao zcashd. O erro foi</translation>
+        <source>There was an error connecting to arnakd. The error was</source>
+        <translation>Ocorreu um erro conectando ao arnakd. O erro foi</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="981"/>
@@ -1133,8 +1133,8 @@ Would you like to visit the releases page?</source>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1217"/>
-        <source>Waiting for zcashd to exit</source>
-        <translation>Esperando zcashd finalizar</translation>
+        <source>Waiting for arnakd to exit</source>
+        <translation>Esperando arnakd finalizar</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="308"/>
@@ -1143,8 +1143,8 @@ Would you like to visit the releases page?</source>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="332"/>
-        <source>zcashd error</source>
-        <translation>erro no zcashd</translation>
+        <source>arnakd error</source>
+        <translation>erro no arnakd</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="399"/>
@@ -1157,22 +1157,22 @@ Por favor, coloque o host/porta e usuário/senha no menu Editar&gt;Preferências
     </message>
     <message>
         <location filename="../src/connection.cpp" line="411"/>
-        <source>Could not connect to zcashd configured in settings.
+        <source>Could not connect to arnakd configured in settings.
 
 Please set the host/port and user/password in the Edit-&gt;Settings menu.</source>
-        <translation>Não foi possível conectar ao zcashd configurado nas preferências.
+        <translation>Não foi possível conectar ao arnakd configurado nas preferências.
 
 Por favor, coloque o host/porta e usuário/senha no menu Editar&gt;Preferências.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="472"/>
-        <source>Authentication failed. The username / password you specified was not accepted by zcashd. Try changing it in the Edit-&gt;Settings menu</source>
-        <translation>Autenticação falhou. O usuário/senha especificado não foi aceitado pelo zcashd. Tente alterá-los em Editar-&gt;Preferências</translation>
+        <source>Authentication failed. The username / password you specified was not accepted by arnakd. Try changing it in the Edit-&gt;Settings menu</source>
+        <translation>Autenticação falhou. O usuário/senha especificado não foi aceitado pelo arnakd. Tente alterá-los em Editar-&gt;Preferências</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="487"/>
-        <source>Your zcashd is starting up. Please wait.</source>
-        <translation>Seu zcashd está iniciando. Por favor aguarde.</translation>
+        <source>Your arnakd is starting up. Please wait.</source>
+        <translation>Seu arnakd está iniciando. Por favor aguarde.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="504"/>
@@ -1662,8 +1662,8 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/settings.ui" line="33"/>
-        <source>zcashd connection</source>
-        <translation>Conexão com zcashd</translation>
+        <source>arnakd connection</source>
+        <translation>Conexão com arnakd</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="62"/>
@@ -1985,7 +1985,7 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/confirm.ui" line="183"/>
-        <source>zcashd doesn&apos;t seem to have any peers. You might not be connected to the internet, so this transaction might not work.</source>
+        <source>arnakd doesn&apos;t seem to have any peers. You might not be connected to the internet, so this transaction might not work.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

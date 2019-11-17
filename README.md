@@ -1,4 +1,4 @@
-ArnakWallet is a z-Addr first, Sapling compatible wallet and full node for zcashd that runs on Linux, Windows and macOS.
+ArnakWallet is a z-Addr first, Sapling compatible wallet and full node for arnakd that runs on Linux, Windows and macOS.
 
 ![Screenshot](docs/screenshot-main.png?raw=true)
 ![Screenshots](docs/screenshot-sub.png?raw=true)
@@ -26,17 +26,17 @@ Download and run the `.msi` installer and follow the prompts. Alternately, you c
 ### macOS
 Double-click on the `.dmg` file to open it, and drag `zecwallet` on to the Applications link to install.
 
-## zcashd
-ArnakWallet needs a Zcash node running zcashd. If you already have a zcashd node running, ArnakWallet will connect to it. 
+## arnakd
+ArnakWallet needs a Zcash node running arnakd. If you already have a arnakd node running, ArnakWallet will connect to it. 
 
-If you don't have one, ArnakWallet will start its embedded zcashd node. 
+If you don't have one, ArnakWallet will start its embedded arnakd node. 
 
-Additionally, if this is the first time you're running ArnakWallet or a zcashd daemon, ArnakWallet will download the Zcash params (~777 MB) and configure `zcash.conf` for you. 
+Additionally, if this is the first time you're running ArnakWallet or a arnakd daemon, ArnakWallet will download the Zcash params (~777 MB) and configure `zcash.conf` for you. 
 
-Pass `--no-embedded` to disable the embedded zcashd and force ArnakWallet to connect to an external node.
+Pass `--no-embedded` to disable the embedded arnakd and force ArnakWallet to connect to an external node.
 
 ## Compiling from source
-ArnakWallet is written in C++ 14, and can be compiled with g++/clang++/visual c++. It also depends on Qt5, which you can get from [here](https://www.qt.io/download). Note that if you are compiling from source, you won't get the embedded zcashd by default. You can either run an external zcashd, or compile zcashd as well. 
+ArnakWallet is written in C++ 14, and can be compiled with g++/clang++/visual c++. It also depends on Qt5, which you can get from [here](https://www.qt.io/download). Note that if you are compiling from source, you won't get the embedded arnakd by default. You can either run an external arnakd, or compile arnakd as well. 
 
 See detailed build instructions [on the wiki](https://github.com/ZcashFoundation/zecwallet/wiki/Compiling-from-source-code)
 

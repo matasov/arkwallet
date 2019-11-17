@@ -46,52 +46,52 @@ void ConnectionLoader::doAutoConnect(bool tryEzcashdStart) {
         auto connection = makeConnection(config);
 
         refreshZcashdState(connection, [=] () {
-            // Refused connection. So try and start embedded zcashd
+            // Refused connection. So try and start embedded arnakd
             if (Settings::getInstance()->useEmbedded()) {
                 if (tryEzcashdStart) {
-                    this->showInformation(QObject::tr("Starting embedded zcashd"));
+                    this->showInformation(QObject::tr("Starting embedded arnakd"));
                     if (this->startEmbeddedZcashd()) {
-                        // Embedded zcashd started up. Wait a second and then refresh the connection
-                        main->logger->write("Embedded zcashd started up, trying autoconnect in 1 sec");
+                        // Embedded arnakd started up. Wait a second and then refresh the connection
+                        main->logger->write("Embedded arnakd started up, trying autoconnect in 1 sec");
                         QTimer::singleShot(1000, [=]() { doAutoConnect(); } );
                     } else {
                         if (config->zcashDaemon) {
-                            // zcashd is configured to run as a daemon, so we must wait for a few seconds
+                            // arnakd is configured to run as a daemon, so we must wait for a few seconds
                             // to let it start up. 
-                            main->logger->write("zcashd is daemon=1. Waiting for it to start up");
-                            this->showInformation(QObject::tr("zcashd is set to run as daemon"), QObject::tr("Waiting for zcashd"));
+                            main->logger->write("arnakd is daemon=1. Waiting for it to start up");
+                            this->showInformation(QObject::tr("arnakd is set to run as daemon"), QObject::tr("Waiting for arnakd"));
                             QTimer::singleShot(5000, [=]() { doAutoConnect(/* don't attempt to start ezcashd */ false); });
                         } else {
                             // Something is wrong. 
                             // We're going to attempt to connect to the one in the background one last time
                             // and see if that works, else throw an error
-                            main->logger->write("Unknown problem while trying to start zcashd");
+                            main->logger->write("Unknown problem while trying to start arnakd");
                             QTimer::singleShot(2000, [=]() { doAutoConnect(/* don't attempt to start ezcashd */ false); });
                         }
                     }
                 } else {
                     // We tried to start ezcashd previously, and it didn't work. So, show the error. 
-                    main->logger->write("Couldn't start embedded zcashd for unknown reason");
+                    main->logger->write("Couldn't start embedded arnakd for unknown reason");
                     QString explanation;
                     if (config->zcashDaemon) {
-                        explanation = QString() % QObject::tr("You have zcashd set to start as a daemon, which can cause problems "
+                        explanation = QString() % QObject::tr("You have arnakd set to start as a daemon, which can cause problems "
                             "with ArnakWallet\n\n."
                             "Please remove the following line from your zcash.conf and restart ArnakWallet\n"
                             "daemon=1");
                     } else {
-                        explanation = QString() % QObject::tr("Couldn't start the embedded zcashd.\n\n" 
-                            "Please try restarting.\n\nIf you previously started zcashd with custom arguments, you might need to reset zcash.conf.\n\n" 
-                            "If all else fails, please run zcashd manually.") %  
+                        explanation = QString() % QObject::tr("Couldn't start the embedded arnakd.\n\n" 
+                            "Please try restarting.\n\nIf you previously started arnakd with custom arguments, you might need to reset zcash.conf.\n\n" 
+                            "If all else fails, please run arnakd manually.") %  
                             (ezcashd ? QObject::tr("The process returned") + ":\n\n" % ezcashd->errorString() : QString(""));
                     }
                     
                     this->showError(explanation);
                 }                
             } else {
-                // zcash.conf exists, there's no connection, and the user asked us not to start zcashd. Error!
-                main->logger->write("Not using embedded and couldn't connect to zcashd");
-                QString explanation = QString() % QObject::tr("Couldn't connect to zcashd configured in zcash.conf.\n\n" 
-                                      "Not starting embedded zcashd because --no-embedded was passed");
+                // zcash.conf exists, there's no connection, and the user asked us not to start arnakd. Error!
+                main->logger->write("Not using embedded and couldn't connect to arnakd");
+                QString explanation = QString() % QObject::tr("Couldn't connect to arnakd configured in zcash.conf.\n\n" 
+                                      "Not starting embedded arnakd because --no-embedded was passed");
                 this->showError(explanation);
             }
         });
@@ -322,7 +322,7 @@ bool ConnectionLoader::startEmbeddedZcashd() {
     if (!Settings::getInstance()->useEmbedded()) 
         return false;
     
-    main->logger->write("Trying to start embedded zcashd");
+    main->logger->write("Trying to start embedded arnakd");
 
     // Static because it needs to survive even after this method returns.
     static QString processStdErrOutput;
@@ -330,7 +330,7 @@ bool ConnectionLoader::startEmbeddedZcashd() {
     if (ezcashd != nullptr) {
         if (ezcashd->state() == QProcess::NotRunning) {
             if (!processStdErrOutput.isEmpty()) {
-                QMessageBox::critical(main, QObject::tr("zcashd error"), "zcashd said: " + processStdErrOutput, 
+                QMessageBox::critical(main, QObject::tr("arnakd error"), "arnakd said: " + processStdErrOutput, 
                                       QMessageBox::Ok);
             }
             return false;
@@ -339,34 +339,34 @@ bool ConnectionLoader::startEmbeddedZcashd() {
         }        
     }
 
-    // Finally, start zcashd    
+    // Finally, start arnakd    
     QDir appPath(QCoreApplication::applicationDirPath());
 #ifdef Q_OS_LINUX
-    auto zcashdProgram = appPath.absoluteFilePath("zqw-zcashd");
+    auto zcashdProgram = appPath.absoluteFilePath("zqw-arnakd");
     if (!QFile(zcashdProgram).exists()) {
-        zcashdProgram = appPath.absoluteFilePath("zcashd");
+        zcashdProgram = appPath.absoluteFilePath("arnakd");
     }
 #elif defined(Q_OS_DARWIN)
-    auto zcashdProgram = appPath.absoluteFilePath("zcashd");
+    auto zcashdProgram = appPath.absoluteFilePath("arnakd");
 #else
-    auto zcashdProgram = appPath.absoluteFilePath("zcashd.exe");
+    auto zcashdProgram = appPath.absoluteFilePath("arnakd.exe");
 #endif
     
     if (!QFile(zcashdProgram).exists()) {
-        qDebug() << "Can't find zcashd at " << zcashdProgram;
-        main->logger->write("Can't find zcashd at " + zcashdProgram); 
+        qDebug() << "Can't find arnakd at " << zcashdProgram;
+        main->logger->write("Can't find arnakd at " + zcashdProgram); 
         return false;
     }
 
     ezcashd = new QProcess(main);    
 
     QObject::connect(ezcashd, &QProcess::errorOccurred, [&] (auto error) {
-        qDebug() << "Couldn't start zcashd: " << error;
+        qDebug() << "Couldn't start arnakd: " << error;
     });
 
     QObject::connect(ezcashd, &QProcess::readyReadStandardError, [&]() {
         auto output = ezcashd->readAllStandardError();
-        main->logger->write("zcashd stderr:" + output);
+        main->logger->write("arnakd stderr:" + output);
         processStdErrOutput += output;
     });
 
@@ -377,7 +377,7 @@ bool ConnectionLoader::startEmbeddedZcashd() {
     ezcashd->start(zcashdProgram);
 #else
     ezcashd->setWorkingDirectory(appPath.absolutePath());
-    ezcashd->start("zcashd.exe");
+    ezcashd->start("arnakd.exe");
 #endif // Q_OS_LINUX
 
 
@@ -402,7 +402,7 @@ void ConnectionLoader::doManualConnect() {
     auto connection = makeConnection(config);
     refreshZcashdState(connection, [=] () {
         QString explanation = QString()
-                % QObject::tr("Could not connect to zcashd configured in settings.\n\n" 
+                % QObject::tr("Could not connect to arnakd configured in settings.\n\n" 
                 "Please set the host/port and user/password in the Edit->Settings menu.");
 
         showError(explanation);
@@ -453,7 +453,7 @@ void ConnectionLoader::refreshZcashdState(Connection* connection, std::function<
         [=] (auto) {
             // Success, hide the dialog if it was shown. 
             d->hide();
-            main->logger->write("zcashd is online.");
+            main->logger->write("arnakd is online.");
             this->doRPCSetConnection(connection);
         },
         [=] (auto reply, auto res) {            
@@ -467,7 +467,7 @@ void ConnectionLoader::refreshZcashdState(Connection* connection, std::function<
                 main->logger->write("Authentication failed");
                 QString explanation = QString() % 
                         QObject::tr("Authentication failed. The username / password you specified was "
-                        "not accepted by zcashd. Try changing it in the Edit->Settings menu");
+                        "not accepted by arnakd. Try changing it in the Edit->Settings menu");
 
                 this->showError(explanation);
             } else if (err == QNetworkReply::NetworkError::InternalServerError && 
@@ -481,8 +481,8 @@ void ConnectionLoader::refreshZcashdState(Connection* connection, std::function<
                     if (dots > 3)
                         dots = 0;
                 }
-                this->showInformation(QObject::tr("Your zcashd is starting up. Please wait."), status);
-                main->logger->write("Waiting for zcashd to come online.");
+                this->showInformation(QObject::tr("Your arnakd is starting up. Please wait."), status);
+                main->logger->write("Waiting for arnakd to come online.");
                 // Refresh after one second
                 QTimer::singleShot(1000, [=]() { this->refreshZcashdState(connection, refused); });
             }
@@ -632,7 +632,7 @@ std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {
         if (name == "testnet" &&
             value == "1"  &&
             zcashconf->port.isEmpty()) {
-                zcashconf->port = "18232";
+                zcashconf->port = "15212";
         }
         if (name == "ibdskiptxverification" && value == "1") {
             zcashconf->skiptxverification = true;
@@ -640,7 +640,7 @@ std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {
     }
 
     // If rpcport is not in the file, and it was not set by the testnet=1 flag, then go to default
-    if (zcashconf->port.isEmpty()) zcashconf->port = "8232";
+    if (zcashconf->port.isEmpty()) zcashconf->port = "15202";
     file.close();
 
     // In addition to the zcash.conf file, also double check the params. 
@@ -649,7 +649,7 @@ std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {
 }
 
 /**
- * Load connection settings from the UI, which indicates an unknown, external zcashd
+ * Load connection settings from the UI, which indicates an unknown, external arnakd
  */ 
 std::shared_ptr<ConnectionConfig> ConnectionLoader::loadFromSettings() {
     // Load from the QT Settings. 

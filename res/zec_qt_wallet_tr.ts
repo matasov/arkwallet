@@ -265,8 +265,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="908"/>
-        <source>zcashd</source>
-        <translation>zcashd</translation>
+        <source>arnakd</source>
+        <translation>arnakd</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="938"/>
@@ -482,8 +482,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="290"/>
-        <source>zcashd is not yet ready. Please wait for the UI to load</source>
-        <translation>zcashd henüz hazır değil. Lütfen arayüzün yüklenmesini bekleyin</translation>
+        <source>arnakd is not yet ready. Please wait for the UI to load</source>
+        <translation>arnakd henüz hazır değil. Lütfen arayüzün yüklenmesini bekleyin</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="444"/>
@@ -497,18 +497,18 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="511"/>
-        <source>Tor configuration is available only when running an embedded zcashd.</source>
-        <translation>Tor konfigürasyonu yalnızca gömülü bir zcashd çalışırken kullanılabilir.</translation>
+        <source>Tor configuration is available only when running an embedded arnakd.</source>
+        <translation>Tor konfigürasyonu yalnızca gömülü bir arnakd çalışırken kullanılabilir.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="550"/>
-        <source>You&apos;re using an external zcashd. Please restart zcashd with -rescan</source>
-        <translation>Harici bir zcashd kullanıyorsun. Lütfen zcashd&apos;yi -rescan ile yeniden başlat</translation>
+        <source>You&apos;re using an external arnakd. Please restart arnakd with -rescan</source>
+        <translation>Harici bir arnakd kullanıyorsun. Lütfen arnakd&apos;yi -rescan ile yeniden başlat</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="553"/>
-        <source>You&apos;re using an external zcashd. Please restart zcashd with -reindex</source>
-        <translation>Harici bir zcashd kullanıyorsun. Lütfen zcashd&apos;yi -reindex ile yeniden başlat</translation>
+        <source>You&apos;re using an external arnakd. Please restart arnakd with -reindex</source>
+        <translation>Harici bir arnakd kullanıyorsun. Lütfen arnakd&apos;yi -reindex ile yeniden başlat</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="578"/>
@@ -582,8 +582,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="928"/>
-        <source>The keys will be imported into your connected zcashd node</source>
-        <translatorcomment>Anahtarlar bağlı zcashd düğümünüze aktarılacak</translatorcomment>
+        <source>The keys will be imported into your connected arnakd node</source>
+        <translatorcomment>Anahtarlar bağlı arnakd düğümünüze aktarılacak</translatorcomment>
         <translation>YOUR_TRANSLATION_HERE</translation>
     </message>
     <message>
@@ -608,8 +608,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1002"/>
-        <source>You need to back it up from the machine zcashd is running on</source>
-        <translation>zcashd&apos;nin çalıştığı makineden yedeklemeniz gerekiyor</translation>
+        <source>You need to back it up from the machine arnakd is running on</source>
+        <translation>arnakd&apos;nin çalıştığı makineden yedeklemeniz gerekiyor</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="1006"/>
@@ -862,8 +862,8 @@ z-adres&apos;i gibi görünmüyor</translation>
     </message>
     <message>
         <location filename="../src/migration.ui" line="81"/>
-        <source>If enabled, zcashd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
-        <translation>Etkinleştirilirse, zcashd Sprout korumalı fonlarınızı yavaşça Sapling adresinize taşıyacaktır. </translation>
+        <source>If enabled, arnakd will slowly migrate your Sprout shielded funds to your Sapling address. </source>
+        <translation>Etkinleştirilirse, arnakd Sprout korumalı fonlarınızı yavaşça Sapling adresinize taşıyacaktır. </translation>
     </message>
 </context>
 <context>
@@ -949,54 +949,54 @@ z-adres&apos;i gibi görünmüyor</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="52"/>
-        <source>Starting embedded zcashd</source>
-        <translation>Gömülü zcashd başlatılıyor</translation>
+        <source>Starting embedded arnakd</source>
+        <translation>Gömülü arnakd başlatılıyor</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
-        <source>zcashd is set to run as daemon</source>
-        <translation>zcashd daemon olarak çalışacak şekilde ayarlandı</translation>
+        <source>arnakd is set to run as daemon</source>
+        <translation>arnakd daemon olarak çalışacak şekilde ayarlandı</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="62"/>
-        <source>Waiting for zcashd</source>
-        <translation>zcashd bekleniyor</translation>
+        <source>Waiting for arnakd</source>
+        <translation>arnakd bekleniyor</translation>
     </message>
     <message>
-        <source>You have zcashd set to start as a daemon, which can cause problems with zec-qt-wallet
+        <source>You have arnakd set to start as a daemon, which can cause problems with zec-qt-wallet
 
 .Please remove the following line from your zcash.conf and restart zec-qt-wallet
 daemon=1</source>
-        <translation type="vanished">zcashd, zec-qt-wallet ile sorunlara neden olan bir daemon olarak başlayacak şekilde ayarladınız.
+        <translation type="vanished">arnakd, zec-qt-wallet ile sorunlara neden olan bir daemon olarak başlayacak şekilde ayarladınız.
 
 .Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="82"/>
-        <source>Couldn&apos;t start the embedded zcashd.
+        <source>Couldn&apos;t start the embedded arnakd.
 
 Please try restarting.
 
-If you previously started zcashd with custom arguments, you might need to reset zcash.conf.
+If you previously started arnakd with custom arguments, you might need to reset zcash.conf.
 
-If all else fails, please run zcashd manually.</source>
-        <translation>Gömülü zcashd başlatılamadı.
+If all else fails, please run arnakd manually.</source>
+        <translation>Gömülü arnakd başlatılamadı.
 
 Lütfen yeniden başlatmayı deneyin.
 
-Daha önce zcashd&apos;yi özel argümanlarla başlattıysanız, zcash.conf dosyasını sıfırlamanız gerekebilir.
+Daha önce arnakd&apos;yi özel argümanlarla başlattıysanız, zcash.conf dosyasını sıfırlamanız gerekebilir.
 
-Hepsi başarısız olursa, lütfen zcashd&apos;yi manuel olarak çalıştırın.</translation>
+Hepsi başarısız olursa, lütfen arnakd&apos;yi manuel olarak çalıştırın.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="93"/>
-        <source>Couldn&apos;t connect to zcashd configured in zcash.conf.
+        <source>Couldn&apos;t connect to arnakd configured in zcash.conf.
 
-Not starting embedded zcashd because --no-embedded was passed</source>
-        <translation>zcash.conf ile yapılandırılmış zcashd&apos;ye bağlanılamadı.
+Not starting embedded arnakd because --no-embedded was passed</source>
+        <translation>zcash.conf ile yapılandırılmış arnakd&apos;ye bağlanılamadı.
 
---no-embedded iletildiğinden gömülü zcashd başlatılmıyor</translation>
+--no-embedded iletildiğinden gömülü arnakd başlatılmıyor</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="243"/>
@@ -1015,11 +1015,11 @@ Not starting embedded zcashd because --no-embedded was passed</source>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="77"/>
-        <source>You have zcashd set to start as a daemon, which can cause problems with ArnakWallet
+        <source>You have arnakd set to start as a daemon, which can cause problems with ArnakWallet
 
 .Please remove the following line from your zcash.conf and restart ArnakWallet
 daemon=1</source>
-        <translation>zcashd&apos;yi, zec-qt-wallet ile sorunlara neden olabilecek bir daemon olacak şekilde ayarladınız.
+        <translation>arnakd&apos;yi, zec-qt-wallet ile sorunlara neden olabilecek bir daemon olacak şekilde ayarladınız.
 
 .Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
@@ -1087,18 +1087,18 @@ daemon=1</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="684"/>
-        <source>Connected to zcashd</source>
+        <source>Connected to arnakd</source>
         <translation>Zcashd&apos;ye bağlanıldı</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="687"/>
-        <source>zcashd has no peer connections</source>
-        <translation>zcashd&apos;nin eş bağlantısı yok</translation>
+        <source>arnakd has no peer connections</source>
+        <translation>arnakd&apos;nin eş bağlantısı yok</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="706"/>
-        <source>There was an error connecting to zcashd. The error was</source>
-        <translation>zcashd ile bağlantı kurulurken bir hata oluştu. Hata</translation>
+        <source>There was an error connecting to arnakd. The error was</source>
+        <translation>arnakd ile bağlantı kurulurken bir hata oluştu. Hata</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="981"/>
@@ -1207,8 +1207,8 @@ Yayınlanan sürümler sayfasını ziyaret etmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1217"/>
-        <source>Waiting for zcashd to exit</source>
-        <translation>Çıkmak için zcashd bekleniyor</translation>
+        <source>Waiting for arnakd to exit</source>
+        <translation>Çıkmak için arnakd bekleniyor</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="308"/>
@@ -1217,8 +1217,8 @@ Yayınlanan sürümler sayfasını ziyaret etmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="332"/>
-        <source>zcashd error</source>
-        <translation>zcashd hatası</translation>
+        <source>arnakd error</source>
+        <translation>arnakd hatası</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="399"/>
@@ -1231,21 +1231,21 @@ Lütfen Düzenle-&gt;Ayarlar menüsünde sunucu/bağlantı noktasını ve kullan
     </message>
     <message>
         <location filename="../src/connection.cpp" line="411"/>
-        <source>Could not connect to zcashd configured in settings.
+        <source>Could not connect to arnakd configured in settings.
 
 Please set the host/port and user/password in the Edit-&gt;Settings menu.</source>
-        <translation>Ayarlarda yapılandırılmış zcashd&apos;ye bağlanılamadı.
+        <translation>Ayarlarda yapılandırılmış arnakd&apos;ye bağlanılamadı.
 
 Lütfen Düzenle-&gt;Ayarlar menüsünde sunucu/bağlantı noktası ve kullanıcı adı/şifreyi ayarlayın.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="472"/>
-        <source>Authentication failed. The username / password you specified was not accepted by zcashd. Try changing it in the Edit-&gt;Settings menu</source>
-        <translation>Kimlik doğrulama başarısız oldu. Belirttiğiniz kullanıcı adı/şifre zcashd tarafından kabul edilmedi. Düzenle-&gt; Ayarlar menüsünde değiştirmeyi deneyin</translation>
+        <source>Authentication failed. The username / password you specified was not accepted by arnakd. Try changing it in the Edit-&gt;Settings menu</source>
+        <translation>Kimlik doğrulama başarısız oldu. Belirttiğiniz kullanıcı adı/şifre arnakd tarafından kabul edilmedi. Düzenle-&gt; Ayarlar menüsünde değiştirmeyi deneyin</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="487"/>
-        <source>Your zcashd is starting up. Please wait.</source>
+        <source>Your arnakd is starting up. Please wait.</source>
         <translation>Zcashd&apos;niz başlıyor. Lütfen bekle.</translation>
     </message>
     <message>
@@ -1699,8 +1699,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/settings.ui" line="33"/>
-        <source>zcashd connection</source>
-        <translation>zcashd bağlantısı</translation>
+        <source>arnakd connection</source>
+        <translation>arnakd bağlantısı</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="62"/>
@@ -2022,8 +2022,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/confirm.ui" line="183"/>
-        <source>zcashd doesn&apos;t seem to have any peers. You might not be connected to the internet, so this transaction might not work.</source>
-        <translation>zcashd&apos;in düğümleri yok gibi görünüyor. İnternete bağlı olmadığınız için bu işlem çalışmayabilir.</translation>
+        <source>arnakd doesn&apos;t seem to have any peers. You might not be connected to the internet, so this transaction might not work.</source>
+        <translation>arnakd&apos;in düğümleri yok gibi görünüyor. İnternete bağlı olmadığınız için bu işlem çalışmayabilir.</translation>
     </message>
     <message>
         <location filename="../src/confirm.ui" line="196"/>

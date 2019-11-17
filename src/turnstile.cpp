@@ -11,7 +11,7 @@ using json = nlohmann::json;
 // Need at least 0.0005 ZEC for this
 double Turnstile::minMigrationAmount = 0.0005;
 
-// Methods for zcashd native Migration
+// Methods for arnakd native Migration
 void Turnstile::showZcashdMigration(MainWindow* parent) {
     // If it is not enabled, don't show the dialog
     if (! parent->getRPC()->getMigrationStatus()->available)

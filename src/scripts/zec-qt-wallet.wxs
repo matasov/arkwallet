@@ -61,8 +61,8 @@
                     </Shortcut>
                 </File>
                 <File Source="LICENSE" />
-                <File Source="zcashd.exe" />
-                <File Source="zcash-cli.exe" />
+                <File Source="arnakd.exe" />
+                <File Source="arnak-cli.exe" />
                 <File Source="README.md" />
 
                 <RegistryKey Root="HKCR" Key="zcash">
