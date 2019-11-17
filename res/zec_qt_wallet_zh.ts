@@ -1192,7 +1192,7 @@ Please set the host/port and user/password in the Edit-&gt;Settings menu.</sourc
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="469"/>
-        <source>No ZEC price was available to convert from USD</source>
+        <source>No ARK price was available to convert from USD</source>
         <translation>ZEC的美元价格无法获取</translation>
     </message>
     <message>
@@ -1616,7 +1616,7 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <source>Request payment from a Sapling address. You&apos;ll send a ARK 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
         <translation>要求从树苗地址付款。 您将使用zcash支付URI将ZEC 0.0001交易发送到该地址。 当地址付款时，备注将包含在交易中。</translation>
     </message>
     <message>
@@ -1744,13 +1744,13 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
     </message>
     <message>
         <location filename="../src/settings.ui" line="273"/>
-        <source>Connect to the internet to fetch ZEC prices</source>
+        <source>Connect to the internet to fetch ARK prices</source>
         <translation>连接到互联网以获取ZEC价格</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="280"/>
-        <source>Fetch ZEC / USD prices</source>
-        <translation>获取 ZEC/USD 价格</translation>
+        <source>Fetch ARK / USD prices</source>
+        <translation>获取 ARK/USD 价格</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="288"/>
@@ -2020,7 +2020,7 @@ You either have unconfirmed funds or the balance is too low for an automatic mig
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="112"/>
-        <source>Allow connections to the internet to check for updates, get ZEC/USD prices etc...</source>
+        <source>Allow connections to the internet to check for updates, get ARK/USD prices etc...</source>
         <translation>允许连接到互联网检查更新，获得ZEC/USD价格等…</translation>
     </message>
     <message>

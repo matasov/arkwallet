@@ -1349,7 +1349,7 @@ El saldo es insuficiente para una migración automática.
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="469"/>
-        <source>No ZEC price was available to convert from USD</source>
+        <source>No ARK price was available to convert from USD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1620,7 +1620,7 @@ El saldo es insuficiente para una migración automática.
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <source>Request payment from a Sapling address. You&apos;ll send a ARK 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1718,12 +1718,12 @@ El saldo es insuficiente para una migración automática.
     </message>
     <message>
         <location filename="../src/settings.ui" line="273"/>
-        <source>Connect to the internet to fetch ZEC prices</source>
+        <source>Connect to the internet to fetch ARK prices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="280"/>
-        <source>Fetch ZEC / USD prices</source>
+        <source>Fetch ARK / USD prices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2024,7 +2024,7 @@ El saldo es insuficiente para una migración automática.
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="112"/>
-        <source>Allow connections to the internet to check for updates, get ZEC/USD prices etc...</source>
+        <source>Allow connections to the internet to check for updates, get ARK/USD prices etc...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
