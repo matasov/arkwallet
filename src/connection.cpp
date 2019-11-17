@@ -38,7 +38,7 @@ void ConnectionLoader::doAutoConnect(bool tryEzcashdStart) {
         return;
     }
 
-    // Priority 2: Try to connect to detect zcash.conf and connect to it.
+    // Priority 2: Try to connect to detect arnak.conf and connect to it.
     auto config = autoDetectZcashConf();
     main->logger->write(QObject::tr("Attempting autoconnect"));
 
@@ -76,11 +76,11 @@ void ConnectionLoader::doAutoConnect(bool tryEzcashdStart) {
                     if (config->zcashDaemon) {
                         explanation = QString() % QObject::tr("You have arnakd set to start as a daemon, which can cause problems "
                             "with ArnakWallet\n\n."
-                            "Please remove the following line from your zcash.conf and restart ArnakWallet\n"
+                            "Please remove the following line from your arnak.conf and restart ArnakWallet\n"
                             "daemon=1");
                     } else {
                         explanation = QString() % QObject::tr("Couldn't start the embedded arnakd.\n\n" 
-                            "Please try restarting.\n\nIf you previously started arnakd with custom arguments, you might need to reset zcash.conf.\n\n" 
+                            "Please try restarting.\n\nIf you previously started arnakd with custom arguments, you might need to reset arnak.conf.\n\n" 
                             "If all else fails, please run arnakd manually.") %  
                             (ezcashd ? QObject::tr("The process returned") + ":\n\n" % ezcashd->errorString() : QString(""));
                     }
@@ -88,16 +88,16 @@ void ConnectionLoader::doAutoConnect(bool tryEzcashdStart) {
                     this->showError(explanation);
                 }                
             } else {
-                // zcash.conf exists, there's no connection, and the user asked us not to start arnakd. Error!
+                // arnak.conf exists, there's no connection, and the user asked us not to start arnakd. Error!
                 main->logger->write("Not using embedded and couldn't connect to arnakd");
-                QString explanation = QString() % QObject::tr("Couldn't connect to arnakd configured in zcash.conf.\n\n" 
+                QString explanation = QString() % QObject::tr("Couldn't connect to arnakd configured in arnak.conf.\n\n" 
                                       "Not starting embedded arnakd because --no-embedded was passed");
                 this->showError(explanation);
             }
         });
     } else {
         if (Settings::getInstance()->useEmbedded()) {
-            // zcash.conf was not found, so create one
+            // arnak.conf was not found, so create one
             createZcashConf();
         } else {
             // Fall back to manual connect
@@ -124,7 +124,7 @@ QString randomPassword() {
 }
 
 /**
- * This will create a new zcash.conf, download Zcash parameters.
+ * This will create a new arnak.conf, download Arnak parameters.
  */ 
 void ConnectionLoader::createZcashConf() {
     main->logger->write("createZcashConf");
@@ -179,7 +179,7 @@ void ConnectionLoader::createZcashConf() {
 
     QFile file(confLocation);
     if (!file.open(QIODevice::ReadWrite | QIODevice::Truncate)) {
-        main->logger->write("Could not create zcash.conf, returning");
+        main->logger->write("Could not create arnak.conf, returning");
         return;
     }
         
@@ -207,7 +207,7 @@ void ConnectionLoader::createZcashConf() {
 
     file.close();
 
-    // Now that zcash.conf exists, try to autoconnect again
+    // Now that arnak.conf exists, try to autoconnect again
     this->doAutoConnect();
 }
 
@@ -221,7 +221,7 @@ void ConnectionLoader::downloadParams(std::function<void(void)> cb) {
     downloadQueue->enqueue(QUrl("https://z.cash/downloads/sapling-output.params"));
     downloadQueue->enqueue(QUrl("https://z.cash/downloads/sapling-spend.params"));  
     downloadQueue->enqueue(QUrl("https://z.cash/downloads/sprout-groth16.params"));
-    // Comment out downloading the Sprout keys because they were deprecated with https://github.com/zcash/zcash/pull/4060
+    // Comment out downloading the Sprout keys because they were deprecated with https://github.com/arnak/arnak/pull/4060
     // downloadQueue->enqueue(QUrl("https://z.cash/downloads/sprout-proving.key"));
     // downloadQueue->enqueue(QUrl("https://z.cash/downloads/sprout-verifying.key"));
 
@@ -521,11 +521,11 @@ void ConnectionLoader::showError(QString explanation) {
 
 QString ConnectionLoader::locateZcashConfFile() {
 #ifdef Q_OS_LINUX
-    auto confLocation = QStandardPaths::locate(QStandardPaths::HomeLocation, ".zcash/zcash.conf");
+    auto confLocation = QStandardPaths::locate(QStandardPaths::HomeLocation, ".arnak/arnak.conf");
 #elif defined(Q_OS_DARWIN)
-    auto confLocation = QStandardPaths::locate(QStandardPaths::HomeLocation, "Library/Application Support/Zcash/zcash.conf");
+    auto confLocation = QStandardPaths::locate(QStandardPaths::HomeLocation, "Library/Application Support/Arnak/arnak.conf");
 #else
-    auto confLocation = QStandardPaths::locate(QStandardPaths::AppDataLocation, "../../Zcash/zcash.conf");
+    auto confLocation = QStandardPaths::locate(QStandardPaths::AppDataLocation, "../../Arnak/arnak.conf");
 #endif
 
     main->logger->write("Found zcashconf at " + QDir::cleanPath(confLocation));
@@ -534,11 +534,11 @@ QString ConnectionLoader::locateZcashConfFile() {
 
 QString ConnectionLoader::zcashConfWritableLocation() {
 #ifdef Q_OS_LINUX
-    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath(".zcash/zcash.conf");
+    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath(".arnak/arnak.conf");
 #elif defined(Q_OS_DARWIN)
-    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath("Library/Application Support/Zcash/zcash.conf");
+    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath("Library/Application Support/Arnak/arnak.conf");
 #else
-    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)).filePath("../../Zcash/zcash.conf");
+    auto confLocation = QDir(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)).filePath("../../Arnak/arnak.conf");
 #endif
 
     main->logger->write("Found zcashconf at " + QDir::cleanPath(confLocation));
@@ -547,7 +547,7 @@ QString ConnectionLoader::zcashConfWritableLocation() {
 
 QString ConnectionLoader::zcashParamsDir() {
     #ifdef Q_OS_LINUX
-    auto paramsLocation = QDir(QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath(".zcash-params"));
+    auto paramsLocation = QDir(QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath(".arnak-params"));
 #elif defined(Q_OS_DARWIN)
     auto paramsLocation = QDir(QDir(QStandardPaths::writableLocation(QStandardPaths::HomeLocation)).filePath("Library/Application Support/ZcashParams"));
 #else
@@ -559,7 +559,7 @@ QString ConnectionLoader::zcashParamsDir() {
         QDir().mkpath(paramsLocation.absolutePath());
     }
 
-    main->logger->write("Found Zcash params directory at " + paramsLocation.absolutePath());
+    main->logger->write("Found Arnak params directory at " + paramsLocation.absolutePath());
     return paramsLocation.absolutePath();
 }
 
@@ -569,7 +569,7 @@ bool ConnectionLoader::verifyParams() {
     if (!QFile(paramsDir.filePath("sapling-output.params")).exists()) return false;
     if (!QFile(paramsDir.filePath("sapling-spend.params")).exists()) return false;
     if (!QFile(paramsDir.filePath("sprout-groth16.params")).exists()) return false;
-    // Comment out downloading the Sprout keys because they were deprecated with https://github.com/zcash/zcash/pull/4060
+    // Comment out downloading the Sprout keys because they were deprecated with https://github.com/arnak/arnak/pull/4060
     // if (!QFile(paramsDir.filePath("sprout-proving.key")).exists()) return false;
     // if (!QFile(paramsDir.filePath("sprout-verifying.key")).exists()) return false;
 
@@ -577,7 +577,7 @@ bool ConnectionLoader::verifyParams() {
 }
 
 /**
- * Try to automatically detect a zcash.conf file in the correct location and load parameters
+ * Try to automatically detect a arnak.conf file in the correct location and load parameters
  */ 
 std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {    
     auto confLocation = Settings::getInstance()->getZcashdConfLocation();
@@ -587,7 +587,7 @@ std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {
     }
 
     if (confLocation.isNull()) {
-        // No Zcash file, just return with nothing
+        // No Arnak file, just return with nothing
         return nullptr;
     }
 
@@ -643,7 +643,7 @@ std::shared_ptr<ConnectionConfig> ConnectionLoader::autoDetectZcashConf() {
     if (zcashconf->port.isEmpty()) zcashconf->port = "15202";
     file.close();
 
-    // In addition to the zcash.conf file, also double check the params. 
+    // In addition to the arnak.conf file, also double check the params. 
 
     return std::shared_ptr<ConnectionConfig>(zcashconf);
 }

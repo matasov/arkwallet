@@ -27,11 +27,11 @@ Download and run the `.msi` installer and follow the prompts. Alternately, you c
 Double-click on the `.dmg` file to open it, and drag `arkwallet` on to the Applications link to install.
 
 ## arnakd
-ArnakWallet needs a Zcash node running arnakd. If you already have a arnakd node running, ArnakWallet will connect to it. 
+ArnakWallet needs a Arnak node running arnakd. If you already have a arnakd node running, ArnakWallet will connect to it. 
 
 If you don't have one, ArnakWallet will start its embedded arnakd node. 
 
-Additionally, if this is the first time you're running ArnakWallet or a arnakd daemon, ArnakWallet will download the Zcash params (~777 MB) and configure `zcash.conf` for you. 
+Additionally, if this is the first time you're running ArnakWallet or a arnakd daemon, ArnakWallet will download the Arnak params (~777 MB) and configure `arnak.conf` for you. 
 
 Pass `--no-embedded` to disable the embedded arnakd and force ArnakWallet to connect to an external node.
 

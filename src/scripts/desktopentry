@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ArnakWallet
-Comment=Full node and wallet for Zcash
+Comment=Full node and wallet for Arnak
 GenericName=Wallet
 Exec=/usr/local/bin/arkwallet %u
 Icon=arkwallet.xpm
@@ -8,6 +8,6 @@ Type=Application
 StartupNotify=true
 StartupWMClass=arkwallet
 Categories=Utility;
-MimeType=x-scheme-handler/zcash;
+MimeType=x-scheme-handler/arnak;
 Keywords=arkwallet;
 

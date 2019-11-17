@@ -380,8 +380,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1172"/>
-        <source>Pay zcash &amp;URI...</source>
-        <translation>zcash URI öde...</translation>
+        <source>Pay arnak &amp;URI...</source>
+        <translation>arnak URI öde...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1177"/>
@@ -400,8 +400,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1190"/>
-        <source>Request zcash...</source>
-        <translation>zcash iste...</translation>
+        <source>Request arnak...</source>
+        <translation>arnak iste...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1195"/>
@@ -562,18 +562,18 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="878"/>
-        <source>Paste Zcash URI</source>
-        <translation>Zcash URI Yapıştır</translation>
+        <source>Paste Arnak URI</source>
+        <translation>Arnak URI Yapıştır</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="890"/>
-        <source>Error paying zcash URI</source>
-        <translation>zcash URI ödeme hatası</translation>
+        <source>Error paying arnak URI</source>
+        <translation>arnak URI ödeme hatası</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="891"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation>URI bu şekilde olmalıdır: &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <translation>URI bu şekilde olmalıdır: &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="927"/>
@@ -965,11 +965,11 @@ z-adres&apos;i gibi görünmüyor</translation>
     <message>
         <source>You have arnakd set to start as a daemon, which can cause problems with zec-qt-wallet
 
-.Please remove the following line from your zcash.conf and restart zec-qt-wallet
+.Please remove the following line from your arnak.conf and restart zec-qt-wallet
 daemon=1</source>
         <translation type="vanished">arnakd, zec-qt-wallet ile sorunlara neden olan bir daemon olarak başlayacak şekilde ayarladınız.
 
-.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
+.Lütfen aşağıdaki satırı arnak.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
     </message>
     <message>
@@ -978,23 +978,23 @@ daemon=1</translation>
 
 Please try restarting.
 
-If you previously started arnakd with custom arguments, you might need to reset zcash.conf.
+If you previously started arnakd with custom arguments, you might need to reset arnak.conf.
 
 If all else fails, please run arnakd manually.</source>
         <translation>Gömülü arnakd başlatılamadı.
 
 Lütfen yeniden başlatmayı deneyin.
 
-Daha önce arnakd&apos;yi özel argümanlarla başlattıysanız, zcash.conf dosyasını sıfırlamanız gerekebilir.
+Daha önce arnakd&apos;yi özel argümanlarla başlattıysanız, arnak.conf dosyasını sıfırlamanız gerekebilir.
 
 Hepsi başarısız olursa, lütfen arnakd&apos;yi manuel olarak çalıştırın.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="93"/>
-        <source>Couldn&apos;t connect to arnakd configured in zcash.conf.
+        <source>Couldn&apos;t connect to arnakd configured in arnak.conf.
 
 Not starting embedded arnakd because --no-embedded was passed</source>
-        <translation>zcash.conf ile yapılandırılmış arnakd&apos;ye bağlanılamadı.
+        <translation>arnak.conf ile yapılandırılmış arnakd&apos;ye bağlanılamadı.
 
 --no-embedded iletildiğinden gömülü arnakd başlatılmıyor</translation>
     </message>
@@ -1017,11 +1017,11 @@ Not starting embedded arnakd because --no-embedded was passed</source>
         <location filename="../src/connection.cpp" line="77"/>
         <source>You have arnakd set to start as a daemon, which can cause problems with ArnakWallet
 
-.Please remove the following line from your zcash.conf and restart ArnakWallet
+.Please remove the following line from your arnak.conf and restart ArnakWallet
 daemon=1</source>
         <translation>arnakd&apos;yi, zec-qt-wallet ile sorunlara neden olabilecek bir daemon olacak şekilde ayarladınız.
 
-.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
+.Lütfen aşağıdaki satırı arnak.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
     </message>
     <message>
@@ -1284,8 +1284,8 @@ Lütfen Düzenle-&gt;Ayarlar menüsünde sunucu/bağlantı noktası ve kullanıc
         <translation>Adres Formatı Hatası</translation>
     </message>
     <message>
-        <source> doesn&apos;t seem to be a valid Zcash address.</source>
-        <translation type="vanished"> geçerli bir Zcash adresi gibi görünmüyor.</translation>
+        <source> doesn&apos;t seem to be a valid Arnak address.</source>
+        <translation type="vanished"> geçerli bir Arnak adresi gibi görünmüyor.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="110"/>
@@ -1304,8 +1304,8 @@ Lütfen Düzenle-&gt;Ayarlar menüsünde sunucu/bağlantı noktası ve kullanıc
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="135"/>
-        <source>%1 doesn&apos;t seem to be a valid Zcash address.</source>
-        <translation>%1 geçerli bir Zcash adresi gibi gözükmüyor.</translation>
+        <source>%1 doesn&apos;t seem to be a valid Arnak address.</source>
+        <translation>%1 geçerli bir Arnak adresi gibi gözükmüyor.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="143"/>
@@ -1656,18 +1656,18 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a zcash payment URI. The memo will be included in the transaction when the address pays you.</source>
-        <translation>Bir Sapling adresinden ödeme talep edin. Bir zcash ödeme URI&apos;si olan bir adrese ZEC 0.0001 işlemi gönderirsiniz. Adres size ödeme yaptığında Memo işleme dahil edilecektir.</translation>
+        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <translation>Bir Sapling adresinden ödeme talep edin. Bir arnak ödeme URI&apos;si olan bir adrese ZEC 0.0001 işlemi gönderirsiniz. Adres size ödeme yaptığında Memo işleme dahil edilecektir.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
-        <source>Error paying zcash URI</source>
-        <translation>zcash URI ödeme hatası</translation>
+        <source>Error paying arnak URI</source>
+        <translation>arnak URI ödeme hatası</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="51"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation>URI bu şekilde olmalıdır: &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <translation>URI bu şekilde olmalıdır: &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="65"/>
@@ -2040,13 +2040,13 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     <name>createZcashConf</name>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="14"/>
-        <source>Configure zcash.conf</source>
-        <translation>zcash.conf dosyasını yapılandırma</translation>
+        <source>Configure arnak.conf</source>
+        <translation>arnak.conf dosyasını yapılandırma</translation>
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="20"/>
-        <source>Your zcash node will be configured for you automatically</source>
-        <translation>zcash düğümünüz sizin için otomatik olarak yapılandırılacak</translation>
+        <source>Your arnak node will be configured for you automatically</source>
+        <translation>arnak düğümünüz sizin için otomatik olarak yapılandırılacak</translation>
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="30"/>

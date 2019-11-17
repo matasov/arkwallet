@@ -65,9 +65,9 @@
                 <File Source="arnak-cli.exe" />
                 <File Source="README.md" />
 
-                <RegistryKey Root="HKCR" Key="zcash">
+                <RegistryKey Root="HKCR" Key="arnak">
                     <RegistryValue Type="string" Name="URL Protocol" Value=""/>
-                    <RegistryValue Type="string" Value="URL:zcash URI protocol"/>
+                    <RegistryValue Type="string" Value="URL:arnak URI protocol"/>
                     <RegistryKey Key="DefaultIcon">
                     <RegistryValue Type="string" Value="arkwallet.exe" />
                     </RegistryKey>

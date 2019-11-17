@@ -362,12 +362,12 @@ QString Settings::paymentURIPretty(PaymentURI uri) {
 PaymentURI Settings::parseURI(QString uri) {
     PaymentURI ans;
 
-    if (!uri.startsWith("zcash:")) {
-        ans.error = "Not a zcash payment URI";
+    if (!uri.startsWith("arnak:")) {
+        ans.error = "Not a arnak payment URI";
         return ans;
     }
 
-    uri = uri.right(uri.length() - QString("zcash:").length());
+    uri = uri.right(uri.length() - QString("arnak:").length());
     
     QRegExp re("([a-zA-Z0-9]+)");
     int pos;

@@ -8,7 +8,7 @@ if [ -z $APP_VERSION ]; then echo "APP_VERSION is not set"; exit 1; fi
 if [ -z $PREV_VERSION ]; then echo "PREV_VERSION is not set"; exit 1; fi
 
 if [ -z $ZCASH_DIR ]; then
-    echo "ZCASH_DIR is not set. Please set it to the base directory of a Zcash project with built Zcash binaries."
+    echo "ZCASH_DIR is not set. Please set it to the base directory of a Arnak project with built Arnak binaries."
     exit 1;
 fi
 

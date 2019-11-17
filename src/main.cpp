@@ -148,7 +148,7 @@ public:
 
         // Command line parser
         QCommandLineParser parser;
-        parser.setApplicationDescription("Shielded desktop wallet and embedded full node for Zcash");
+        parser.setApplicationDescription("Shielded desktop wallet and embedded full node for Arnak");
         parser.addHelpOption();
 
         // A boolean option for running it headless
@@ -160,16 +160,16 @@ public:
         parser.addOption(noembeddedOption);
 
         // Add an option to specify the conf file
-            QCommandLineOption confOption(QStringList() << "conf", "Use the zcash.conf specified instead of looking for the default one.",
+            QCommandLineOption confOption(QStringList() << "conf", "Use the arnak.conf specified instead of looking for the default one.",
                                           "confFile");
         parser.addOption(confOption);
 
-        // Positional argument will specify a zcash payment URI
-        parser.addPositionalArgument("zcashURI", "An optional zcash URI to pay");
+        // Positional argument will specify a arnak payment URI
+        parser.addPositionalArgument("zcashURI", "An optional arnak URI to pay");
 
         parser.process(a);
 
-        // Check for a positional argument indicating a zcash payment URI
+        // Check for a positional argument indicating a arnak payment URI
         if (a.isSecondary()) {
             if (parser.positionalArguments().length() > 0) {
                 a.sendMessage(parser.positionalArguments()[0].toUtf8());    
@@ -235,7 +235,7 @@ public:
             w->payZcashURI(parser.positionalArguments()[0]);
         }
 
-        // Listen for any secondary instances telling us about a zcash payment URI
+        // Listen for any secondary instances telling us about a arnak payment URI
         QObject::connect(&a, &SingleApplication::receivedMessage, [=] (quint32, QByteArray msg) {
             QString uri(msg);
 

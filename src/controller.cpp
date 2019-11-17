@@ -90,7 +90,7 @@ void Controller::setConnection(Connection* c) {
 
     ui->statusBar->showMessage("Ready!");
 
-    // See if we need to remove the reindex/rescan flags from the zcash.conf file
+    // See if we need to remove the reindex/rescan flags from the arnak.conf file
     auto zcashConfLocation = Settings::getInstance()->getZcashdConfLocation();
     Settings::removeFromZcashConf(zcashConfLocation, "rescan");
     Settings::removeFromZcashConf(zcashConfLocation, "reindex");
@@ -288,7 +288,7 @@ void Controller::getInfoThenRefresh(bool force) {
                     ui->heightLabel->setText(QObject::tr("Downloading blocks"));
                 } else {
                     // If syncing is finished, we may have to remove the ibdskiptxverification
-                    // flag from zcash.conf
+                    // flag from arnak.conf
                     if (getConnection() != nullptr && getConnection()->config->skiptxverification) {
                         getConnection()->config->skiptxverification = false;
                         Settings::removeFromZcashConf(Settings::getInstance()->getZcashdConfLocation(), 
@@ -813,7 +813,7 @@ void Controller::shutdownZcashd() {
     });
     waiter.start(1000);
 
-    // Wait for the zcash process to exit.
+    // Wait for the arnak process to exit.
     if (!Settings::getInstance()->isHeadless()) {
         d.exec(); 
     } else {

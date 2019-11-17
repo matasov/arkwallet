@@ -407,7 +407,7 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1172"/>
-        <source>Pay zcash &amp;URI...</source>
+        <source>Pay arnak &amp;URI...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -427,7 +427,7 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1190"/>
-        <source>Request zcash...</source>
+        <source>Request arnak...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -522,17 +522,17 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="890"/>
-        <source>Error paying zcash URI</source>
+        <source>Error paying arnak URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="891"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="878"/>
-        <source>Paste Zcash URI</source>
+        <source>Paste Arnak URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -957,7 +957,7 @@ doesn&apos;t look like a z-address</source>
         <location filename="../src/connection.cpp" line="77"/>
         <source>You have arnakd set to start as a daemon, which can cause problems with ArnakWallet
 
-.Please remove the following line from your zcash.conf and restart ArnakWallet
+.Please remove the following line from your arnak.conf and restart ArnakWallet
 daemon=1</source>
         <translatorcomment>Hai arnakd impostato per l&apos;avvio come daemon, che può causare problemi con ArnakWallet</translatorcomment>
         <translation>YOUR_TRANSLATION_HERE</translation>
@@ -968,22 +968,22 @@ daemon=1</source>
 
 Please try restarting.
 
-If you previously started arnakd with custom arguments, you might need to reset zcash.conf.
+If you previously started arnakd with custom arguments, you might need to reset arnak.conf.
 
 If all else fails, please run arnakd manually.</source>
         <translatorcomment>check</translatorcomment>
         <translation>Impossibile avviare arnakd integrato
 Per favore prova a riavviare.
-Se hai precedentemente avviato arnakd con parametri personalizzati, potresti dover reimpostare lo zcash.conf
+Se hai precedentemente avviato arnakd con parametri personalizzati, potresti dover reimpostare lo arnak.conf
 Se tutto il resto fallisce, si prega di eseguire manualmente arnakd.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="93"/>
-        <source>Couldn&apos;t connect to arnakd configured in zcash.conf.
+        <source>Couldn&apos;t connect to arnakd configured in arnak.conf.
 
 Not starting embedded arnakd because --no-embedded was passed</source>
         <translatorcomment>Check</translatorcomment>
-        <translation>Impossibile connettersi a arnakd come configurato nello zcash.conf.
+        <translation>Impossibile connettersi a arnakd come configurato nello arnak.conf.
 Non è stato avviato arnakd integrato perché è stato passato il comando --no-embedded</translation>
     </message>
     <message>
@@ -1235,12 +1235,12 @@ Impostare host/porta e utente/password nel menu Modifica-&gt; Impostazioni.</tra
         <translation>Errore nel formato dell&apos;indirizzo</translation>
     </message>
     <message>
-        <source> doesn&apos;t seem to be a valid Zcash address.</source>
-        <translation type="vanished"> Non sembra un indirizzo Zcash Valido.</translation>
+        <source> doesn&apos;t seem to be a valid Arnak address.</source>
+        <translation type="vanished"> Non sembra un indirizzo Arnak Valido.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="135"/>
-        <source>%1 doesn&apos;t seem to be a valid Zcash address.</source>
+        <source>%1 doesn&apos;t seem to be a valid Arnak address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1629,17 +1629,17 @@ Avete fondi non confermati o il saldo è troppo basso per una migrazione automat
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a zcash payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
-        <source>Error paying zcash URI</source>
+        <source>Error paying arnak URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="51"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2015,7 +2015,7 @@ Avete fondi non confermati o il saldo è troppo basso per una migrazione automat
     <name>createZcashConf</name>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="14"/>
-        <source>Configure zcash.conf</source>
+        <source>Configure arnak.conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2025,7 +2025,7 @@ Avete fondi non confermati o il saldo è troppo basso per una migrazione automat
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="20"/>
-        <source>Your zcash node will be configured for you automatically</source>
+        <source>Your arnak node will be configured for you automatically</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

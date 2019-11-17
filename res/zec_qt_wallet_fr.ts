@@ -405,8 +405,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1172"/>
-        <source>Pay zcash &amp;URI...</source>
-        <translation>PAyer une URI zcash</translation>
+        <source>Pay arnak &amp;URI...</source>
+        <translation>PAyer une URI arnak</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1177"/>
@@ -425,7 +425,7 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="1190"/>
-        <source>Request zcash...</source>
+        <source>Request arnak...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -550,18 +550,18 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="890"/>
-        <source>Error paying zcash URI</source>
-        <translation>Erreur lors du payement du URI zcash</translation>
+        <source>Error paying arnak URI</source>
+        <translation>Erreur lors du payement du URI arnak</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="891"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation>Le format URI doit être comme suit: &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <translation>Le format URI doit être comme suit: &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="878"/>
-        <source>Paste Zcash URI</source>
-        <translation>Coller le URI Zcash</translation>
+        <source>Paste Arnak URI</source>
+        <translation>Coller le URI Arnak</translation>
     </message>
     <message>
         <source>Could not understand address</source>
@@ -969,11 +969,11 @@ Cette adresse ne semble pas être de type adresse-z</translation>
         <location filename="../src/connection.cpp" line="77"/>
         <source>You have arnakd set to start as a daemon, which can cause problems with ArnakWallet
 
-.Please remove the following line from your zcash.conf and restart ArnakWallet
+.Please remove the following line from your arnak.conf and restart ArnakWallet
 daemon=1</source>
         <translation>vous avez arnakd configuré pour démarrer en tant que démon ce qui peut causer des problèmes avec ArnakWallet
 
- Veuillez enlever la ligne suivante de votre fichier &quot;zcash.conf&quot; et redémarrer ArnakWallet:
+ Veuillez enlever la ligne suivante de votre fichier &quot;arnak.conf&quot; et redémarrer ArnakWallet:
 daemon=1</translation>
     </message>
     <message>
@@ -982,20 +982,20 @@ daemon=1</translation>
 
 Please try restarting.
 
-If you previously started arnakd with custom arguments, you might need to reset zcash.conf.
+If you previously started arnakd with custom arguments, you might need to reset arnak.conf.
 
 If all else fails, please run arnakd manually.</source>
         <translation>Impossible de démarrer le arnakd intégré.
 
 Veuillez essayer de redémarrer.
 
-Si vous avez précédemment démarré arnakd avec des arguments, vous devrez peut-être réinitialiser le fichier zcash.conf.
+Si vous avez précédemment démarré arnakd avec des arguments, vous devrez peut-être réinitialiser le fichier arnak.conf.
 
 Si tout échoue, exécutez arnakd manuellement.</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="93"/>
-        <source>Couldn&apos;t connect to arnakd configured in zcash.conf.
+        <source>Couldn&apos;t connect to arnakd configured in arnak.conf.
 
 Not starting embedded arnakd because --no-embedded was passed</source>
         <translation>Le démarrage de arnakd n&apos;a pas eu lieu car l&apos;argument --no-embedded a été utilisé au lancement</translation>
@@ -1247,12 +1247,12 @@ Veuillez configurer l&apos;hôte/port et utilisateur/mot de passe dans le menu E
         <translation>Erreur de format d&apos;adresse</translation>
     </message>
     <message>
-        <source> doesn&apos;t seem to be a valid Zcash address.</source>
-        <translation type="vanished"> ne semble pas être une adresse Zcash valide.</translation>
+        <source> doesn&apos;t seem to be a valid Arnak address.</source>
+        <translation type="vanished"> ne semble pas être une adresse Arnak valide.</translation>
     </message>
     <message>
         <location filename="../src/addressbook.cpp" line="135"/>
-        <source>%1 doesn&apos;t seem to be a valid Zcash address.</source>
+        <source>%1 doesn&apos;t seem to be a valid Arnak address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1641,18 +1641,18 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a zcash payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <source>Request payment from a Sapling address. You&apos;ll send a ZEC 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
-        <source>Error paying zcash URI</source>
-        <translation type="unfinished">Erreur lors du payement du URI zcash</translation>
+        <source>Error paying arnak URI</source>
+        <translation type="unfinished">Erreur lors du payement du URI arnak</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="51"/>
-        <source>URI should be of the form &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</source>
-        <translation type="unfinished">Le format URI doit être comme suit: &apos;zcash:&lt;addr&gt;?amt=x&amp;memo=y</translation>
+        <source>URI should be of the form &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</source>
+        <translation type="unfinished">Le format URI doit être comme suit: &apos;arnak:&lt;addr&gt;?amt=x&amp;memo=y</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="65"/>
@@ -2029,7 +2029,7 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     <name>createZcashConf</name>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="14"/>
-        <source>Configure zcash.conf</source>
+        <source>Configure arnak.conf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2039,7 +2039,7 @@ Vous avez soit des fonds non confirmés soit le solde est trop petit pour une mi
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="20"/>
-        <source>Your zcash node will be configured for you automatically</source>
+        <source>Your arnak node will be configured for you automatically</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
