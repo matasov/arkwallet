@@ -31,8 +31,8 @@
     <name>ConnectionDialog</name>
     <message>
         <location filename="../src/connection.ui" line="17"/>
-        <source>ZecWallet</source>
-        <translation>ZecWallet</translation>
+        <source>ArnakWallet</source>
+        <translation>ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/connection.ui" line="58"/>
@@ -44,8 +44,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../src/mainwindow.ui" line="14"/>
-        <source>ZecWallet</source>
-        <translation>ZecWallet</translation>
+        <source>ArnakWallet</source>
+        <translation>ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="29"/>
@@ -450,7 +450,7 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="579"/>
-        <source>Connection over Tor has been enabled. To use this feature, you need to restart ZecWallet.</source>
+        <source>Connection over Tor has been enabled. To use this feature, you need to restart ArnakWallet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -460,13 +460,13 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="589"/>
-        <source>Connection over Tor has been disabled. To fully disconnect from Tor, you need to restart ZecWallet.</source>
+        <source>Connection over Tor has been disabled. To fully disconnect from Tor, you need to restart ArnakWallet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="649"/>
-        <source>Thanks for supporting ZecWallet!</source>
-        <translation>Obrigado por apoiar a ZecWallet!</translation>
+        <source>Thanks for supporting ArnakWallet!</source>
+        <translation>Obrigado por apoiar a ArnakWallet!</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="651"/>
@@ -475,8 +475,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="651"/>
-        <source> to support ZecWallet</source>
-        <translation> para apoiar ZecWallet</translation>
+        <source> to support ArnakWallet</source>
+        <translation> para apoiar ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="730"/>
@@ -505,12 +505,12 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="618"/>
-        <source>ZecWallet needs to restart to rescan/reindex. ZecWallet will now close, please restart ZecWallet to continue</source>
+        <source>ArnakWallet needs to restart to rescan/reindex. ArnakWallet will now close, please restart ArnakWallet to continue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="620"/>
-        <source>Restart ZecWallet</source>
+        <source>Restart ArnakWallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -875,17 +875,17 @@ não se parece com um z-Address</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="84"/>
-        <source>Allow connections over the internet via ZecWallet wormhole</source>
+        <source>Allow connections over the internet via ArnakWallet wormhole</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="36"/>
-        <source>Scan this QRCode from your ZecWallet companion app to connect your phone</source>
+        <source>Scan this QRCode from your ArnakWallet companion app to connect your phone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="94"/>
-        <source>ZecWallet Companion App</source>
+        <source>ArnakWallet Companion App</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -946,12 +946,12 @@ não se parece com um z-Address</translation>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="77"/>
-        <source>You have zcashd set to start as a daemon, which can cause problems with ZecWallet
+        <source>You have zcashd set to start as a daemon, which can cause problems with ArnakWallet
 
-.Please remove the following line from your zcash.conf and restart ZecWallet
+.Please remove the following line from your zcash.conf and restart ArnakWallet
 daemon=1</source>
-        <translation>Você tem zcashd configurado como daemon, o que pode causar problemas com a ZecWallet
- Por favor, remova a seguinte linha do seu zcash.conf e reinicie a ZecWallet:
+        <translation>Você tem zcashd configurado como daemon, o que pode causar problemas com a ArnakWallet
+ Por favor, remova a seguinte linha do seu zcash.conf e reinicie a ArnakWallet:
 daemon=1</translation>
     </message>
     <message>
@@ -1128,8 +1128,8 @@ Would you like to visit the releases page?</source>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1216"/>
-        <source>Please wait for ZecWallet to exit</source>
-        <translation>Por favor, espera ZecWallet finalizar</translation>
+        <source>Please wait for ArnakWallet to exit</source>
+        <translation>Por favor, espera ArnakWallet finalizar</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1217"/>
@@ -1333,7 +1333,7 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="359"/>
-        <source>Connected over the internet via ZecWallet wormhole service</source>
+        <source>Connected over the internet via ArnakWallet wormhole service</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1516,7 +1516,7 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="44"/>
-        <source>How should ZecWallet proceed?</source>
+        <source>How should ArnakWallet proceed?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1737,7 +1737,7 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/settings.ui" line="301"/>
-        <source>Rescan the blockchain for any missing wallet transactions and to correct your wallet balance. This may take several hours. You need to restart ZecWallet for this to take effect</source>
+        <source>Rescan the blockchain for any missing wallet transactions and to correct your wallet balance. This may take several hours. You need to restart ArnakWallet for this to take effect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1747,7 +1747,7 @@ Você possui fundos não confirmados ou o saldo é muito baixo para uma migraç�
     </message>
     <message>
         <location filename="../src/settings.ui" line="345"/>
-        <source>Rebuild the entire blockchain from the genesis block, by rescanning all the block files. This may take several hours to days, depending on your hardware. You need to restart ZecWallet for this to take effect</source>
+        <source>Rebuild the entire blockchain from the genesis block, by rescanning all the block files. This may take several hours to days, depending on your hardware. You need to restart ArnakWallet for this to take effect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

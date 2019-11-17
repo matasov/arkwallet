@@ -93,8 +93,8 @@ rm -f artifacts/rw* >/dev/null 2>&1
 cp $ZCASH_DIR/src/zcashd zecwallet.app/Contents/MacOS/
 cp $ZCASH_DIR/src/zcash-cli zecwallet.app/Contents/MacOS/
 $QT_PATH/bin/macdeployqt zecwallet.app 
-mv zecwallet.app ZecWallet.app
-codesign --deep --force --verify --verbose -s "$CERTIFICATE" --options runtime --timestamp ZecWallet.app
+mv zecwallet.app ArnakWallet.app
+codesign --deep --force --verify --verbose -s "$CERTIFICATE" --options runtime --timestamp ArnakWallet.app
 echo "[OK]"
 
 # Code Signing Note:
@@ -106,7 +106,7 @@ echo "[OK]"
 
 echo -n "Building dmg..........."
 
-create-dmg --volname "ZecWallet-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "ZecWallet.app" 200 190  --app-drop-link 600 185 --hide-extension "ZecWallet.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-zecwallet-v$APP_VERSION.dmg ZecWallet.app >/dev/null 2>&1
+create-dmg --volname "ArnakWallet-v$APP_VERSION" --volicon "res/logo.icns" --window-pos 200 120 --icon "ArnakWallet.app" 200 190  --app-drop-link 600 185 --hide-extension "ArnakWallet.app"  --window-size 800 400 --hdiutil-quiet --background res/dmgbg.png  artifacts/macOS-zecwallet-v$APP_VERSION.dmg ArnakWallet.app >/dev/null 2>&1
 
 #mkdir bin/dmgbuild >/dev/null 2>&1
 #sed "s/RELEASE_VERSION/${APP_VERSION}/g" res/appdmg.json > bin/dmgbuild/appdmg.json

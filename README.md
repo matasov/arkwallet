@@ -1,4 +1,4 @@
-ZecWallet is a z-Addr first, Sapling compatible wallet and full node for zcashd that runs on Linux, Windows and macOS.
+ArnakWallet is a z-Addr first, Sapling compatible wallet and full node for zcashd that runs on Linux, Windows and macOS.
 
 ![Screenshot](docs/screenshot-main.png?raw=true)
 ![Screenshots](docs/screenshot-sub.png?raw=true)
@@ -27,16 +27,16 @@ Download and run the `.msi` installer and follow the prompts. Alternately, you c
 Double-click on the `.dmg` file to open it, and drag `zecwallet` on to the Applications link to install.
 
 ## zcashd
-ZecWallet needs a Zcash node running zcashd. If you already have a zcashd node running, ZecWallet will connect to it. 
+ArnakWallet needs a Zcash node running zcashd. If you already have a zcashd node running, ArnakWallet will connect to it. 
 
-If you don't have one, ZecWallet will start its embedded zcashd node. 
+If you don't have one, ArnakWallet will start its embedded zcashd node. 
 
-Additionally, if this is the first time you're running ZecWallet or a zcashd daemon, ZecWallet will download the Zcash params (~777 MB) and configure `zcash.conf` for you. 
+Additionally, if this is the first time you're running ArnakWallet or a zcashd daemon, ArnakWallet will download the Zcash params (~777 MB) and configure `zcash.conf` for you. 
 
-Pass `--no-embedded` to disable the embedded zcashd and force ZecWallet to connect to an external node.
+Pass `--no-embedded` to disable the embedded zcashd and force ArnakWallet to connect to an external node.
 
 ## Compiling from source
-ZecWallet is written in C++ 14, and can be compiled with g++/clang++/visual c++. It also depends on Qt5, which you can get from [here](https://www.qt.io/download). Note that if you are compiling from source, you won't get the embedded zcashd by default. You can either run an external zcashd, or compile zcashd as well. 
+ArnakWallet is written in C++ 14, and can be compiled with g++/clang++/visual c++. It also depends on Qt5, which you can get from [here](https://www.qt.io/download). Note that if you are compiling from source, you won't get the embedded zcashd by default. You can either run an external zcashd, or compile zcashd as well. 
 
 See detailed build instructions [on the wiki](https://github.com/ZcashFoundation/zecwallet/wiki/Compiling-from-source-code)
 
@@ -85,4 +85,4 @@ make
 Please read the [troubleshooting guide](https://docs.zecwallet.co/troubleshooting/) for common problems and solutions.
 For support or other questions, tweet at [@zecwallet](https://twitter.com/zecwallet) or [file an issue](https://github.com/ZcashFoundation/zecwallet/issues).
 
-_PS: ZecWallet is NOT an official wallet, and is not affiliated with the Electric Coin Company in any way._
+_PS: ArnakWallet is NOT an official wallet, and is not affiliated with the Electric Coin Company in any way._

@@ -31,12 +31,12 @@
     <name>ConnectionDialog</name>
     <message>
         <source>zec-qt-wallet</source>
-        <translation type="vanished">ZecWallet</translation>
+        <translation type="vanished">ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/connection.ui" line="17"/>
-        <source>ZecWallet</source>
-        <translation>ZecWallet</translation>
+        <source>ArnakWallet</source>
+        <translation>ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/connection.ui" line="58"/>
@@ -48,7 +48,7 @@
     <name>MainWindow</name>
     <message>
         <source>zec-qt-wallet</source>
-        <translation type="vanished">ZecWallet</translation>
+        <translation type="vanished">ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="29"/>
@@ -193,8 +193,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="14"/>
-        <source>ZecWallet</source>
-        <translation>ZecWallet</translation>
+        <source>ArnakWallet</source>
+        <translation>ArnakWallet</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="170"/>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Thanks for supporting zec-qt-wallet!</source>
-        <translation type="vanished">ZecWallet&apos;i desteklediğiniz için teşekkür ederiz!</translation>
+        <translation type="vanished">ArnakWallet&apos;i desteklediğiniz için teşekkür ederiz!</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="651"/>
@@ -448,7 +448,7 @@
     <message>
         <source> to support zec-qt-wallet</source>
         <translatorcomment>0.01 Bağış yap yazısının devamı</translatorcomment>
-        <translation type="vanished">ve ZecWallet&apos;i destekle</translation>
+        <translation type="vanished">ve ArnakWallet&apos;i destekle</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="730"/>
@@ -517,8 +517,8 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="579"/>
-        <source>Connection over Tor has been enabled. To use this feature, you need to restart ZecWallet.</source>
-        <translation>Tor üzerinden bağlantı etkin. Bu özelliği kullanmak için, ZecWallet&apos;i yeniden başlatmanız gerekir.</translation>
+        <source>Connection over Tor has been enabled. To use this feature, you need to restart ArnakWallet.</source>
+        <translation>Tor üzerinden bağlantı etkin. Bu özelliği kullanmak için, ArnakWallet&apos;i yeniden başlatmanız gerekir.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="588"/>
@@ -527,28 +527,28 @@
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="589"/>
-        <source>Connection over Tor has been disabled. To fully disconnect from Tor, you need to restart ZecWallet.</source>
-        <translation>Tor üzerinden bağlantı devre dışı bırakıldı. Tor ile bağlantıyı tamamen kesmek için ZecWallet&apos;i yeniden başlatmanız gerekir.</translation>
+        <source>Connection over Tor has been disabled. To fully disconnect from Tor, you need to restart ArnakWallet.</source>
+        <translation>Tor üzerinden bağlantı devre dışı bırakıldı. Tor ile bağlantıyı tamamen kesmek için ArnakWallet&apos;i yeniden başlatmanız gerekir.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="618"/>
-        <source>ZecWallet needs to restart to rescan/reindex. ZecWallet will now close, please restart ZecWallet to continue</source>
-        <translation>ZecWallet yeniden tarama/yeniden indeksleme için yeniden başlatılması gerekiyor. ZecWallet şimdi kapanacak, lütfen devam etmek için ZecWallet&apos;i yeniden başlatın</translation>
+        <source>ArnakWallet needs to restart to rescan/reindex. ArnakWallet will now close, please restart ArnakWallet to continue</source>
+        <translation>ArnakWallet yeniden tarama/yeniden indeksleme için yeniden başlatılması gerekiyor. ArnakWallet şimdi kapanacak, lütfen devam etmek için ArnakWallet&apos;i yeniden başlatın</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="620"/>
-        <source>Restart ZecWallet</source>
-        <translation>ZecWallet&apos;i yeniden başlat</translation>
+        <source>Restart ArnakWallet</source>
+        <translation>ArnakWallet&apos;i yeniden başlat</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="649"/>
-        <source>Thanks for supporting ZecWallet!</source>
-        <translation>ZecWallet&apos;i desteklediğiniz için teşekkür ederiz!</translation>
+        <source>Thanks for supporting ArnakWallet!</source>
+        <translation>ArnakWallet&apos;i desteklediğiniz için teşekkür ederiz!</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="651"/>
-        <source> to support ZecWallet</source>
-        <translation> ZecWallet&apos;i desteklemek için</translation>
+        <source> to support ArnakWallet</source>
+        <translation> ArnakWallet&apos;i desteklemek için</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="667"/>
@@ -883,8 +883,8 @@ z-adres&apos;i gibi görünmüyor</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="36"/>
-        <source>Scan this QRCode from your ZecWallet companion app to connect your phone</source>
-        <translation>Telefonunuzu bağlamak için bu QR Kodu&apos;nu ZecWallet dostu uygulamadan tarayın</translation>
+        <source>Scan this QRCode from your ArnakWallet companion app to connect your phone</source>
+        <translation>Telefonunuzu bağlamak için bu QR Kodu&apos;nu ArnakWallet dostu uygulamadan tarayın</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="43"/>
@@ -898,13 +898,13 @@ z-adres&apos;i gibi görünmüyor</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="84"/>
-        <source>Allow connections over the internet via ZecWallet wormhole</source>
-        <translation>ZecWallet solucan deliği aracılığıyla internet üzerinden bağlantıya izin ver</translation>
+        <source>Allow connections over the internet via ArnakWallet wormhole</source>
+        <translation>ArnakWallet solucan deliği aracılığıyla internet üzerinden bağlantıya izin ver</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="94"/>
-        <source>ZecWallet Companion App</source>
-        <translation>ZecWallet Dostu Uygulama</translation>
+        <source>ArnakWallet Companion App</source>
+        <translation>ArnakWallet Dostu Uygulama</translation>
     </message>
     <message>
         <location filename="../src/mobileappconnector.ui" line="106"/>
@@ -969,7 +969,7 @@ z-adres&apos;i gibi görünmüyor</translation>
 daemon=1</source>
         <translation type="vanished">zcashd, zec-qt-wallet ile sorunlara neden olan bir daemon olarak başlayacak şekilde ayarladınız.
 
-.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ZecWallet&apos;i yeniden başlatın
+.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
     </message>
     <message>
@@ -1015,13 +1015,13 @@ Not starting embedded zcashd because --no-embedded was passed</source>
     </message>
     <message>
         <location filename="../src/connection.cpp" line="77"/>
-        <source>You have zcashd set to start as a daemon, which can cause problems with ZecWallet
+        <source>You have zcashd set to start as a daemon, which can cause problems with ArnakWallet
 
-.Please remove the following line from your zcash.conf and restart ZecWallet
+.Please remove the following line from your zcash.conf and restart ArnakWallet
 daemon=1</source>
         <translation>zcashd&apos;yi, zec-qt-wallet ile sorunlara neden olabilecek bir daemon olacak şekilde ayarladınız.
 
-.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ZecWallet&apos;i yeniden başlatın
+.Lütfen aşağıdaki satırı zcash.conf dosyanızdan kaldırın ve ArnakWallet&apos;i yeniden başlatın
 daemon=1</translation>
     </message>
     <message>
@@ -1140,8 +1140,8 @@ Yayınlanan sürümler sayfasını ziyaret etmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1216"/>
-        <source>Please wait for ZecWallet to exit</source>
-        <translation>Lütfen çıkmak için ZecWallet&apos;i bekleyin</translation>
+        <source>Please wait for ArnakWallet to exit</source>
+        <translation>Lütfen çıkmak için ArnakWallet&apos;i bekleyin</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="469"/>
@@ -1203,7 +1203,7 @@ Yayınlanan sürümler sayfasını ziyaret etmek ister misiniz?</translation>
     </message>
     <message>
         <source>Please wait for zec-qt-wallet to exit</source>
-        <translation type="vanished">Lütfen çıkmak için ZecWallet&apos;i bekleyin</translation>
+        <translation type="vanished">Lütfen çıkmak için ArnakWallet&apos;i bekleyin</translation>
     </message>
     <message>
         <location filename="../src/rpc.cpp" line="1217"/>
@@ -1407,8 +1407,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="359"/>
-        <source>Connected over the internet via ZecWallet wormhole service</source>
-        <translation>ZecWallet&apos;in solucan deliği servisi aracılığıyla internet üzerinden bağlandı</translation>
+        <source>Connected over the internet via ArnakWallet wormhole service</source>
+        <translation>ArnakWallet&apos;in solucan deliği servisi aracılığıyla internet üzerinden bağlandı</translation>
     </message>
     <message>
         <location filename="../src/websockets.cpp" line="652"/>
@@ -1553,8 +1553,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="44"/>
-        <source>How should ZecWallet proceed?</source>
-        <translation>ZecWallet nasıl ilerlemeli?</translation>
+        <source>How should ArnakWallet proceed?</source>
+        <translation>ArnakWallet nasıl ilerlemeli?</translation>
     </message>
     <message>
         <location filename="../src/recurringmultiple.ui" line="51"/>
@@ -1774,8 +1774,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/settings.ui" line="301"/>
-        <source>Rescan the blockchain for any missing wallet transactions and to correct your wallet balance. This may take several hours. You need to restart ZecWallet for this to take effect</source>
-        <translation>Eksik cüzdan işlemleri ve cüzdan bakiyenizi düzeltmek için blok zincirini yeniden tarayın. Bu birkaç saat sürebilir. Bunun gerçekleşmesi için ZecWallet&apos;i yeniden başlatmanız gerekir</translation>
+        <source>Rescan the blockchain for any missing wallet transactions and to correct your wallet balance. This may take several hours. You need to restart ArnakWallet for this to take effect</source>
+        <translation>Eksik cüzdan işlemleri ve cüzdan bakiyenizi düzeltmek için blok zincirini yeniden tarayın. Bu birkaç saat sürebilir. Bunun gerçekleşmesi için ArnakWallet&apos;i yeniden başlatmanız gerekir</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="311"/>
@@ -1784,8 +1784,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/settings.ui" line="345"/>
-        <source>Rebuild the entire blockchain from the genesis block, by rescanning all the block files. This may take several hours to days, depending on your hardware. You need to restart ZecWallet for this to take effect</source>
-        <translation>Tüm blok dosyalarını yeniden tarayarak blok zincirini genesis bloğundan yeniden oluşturun. Bu, donanımınıza bağlı olarak birkaç saat ila günler sürebilir. Bunun gerçekleşmesi için ZecWallet’i yeniden başlatmanız gerekir</translation>
+        <source>Rebuild the entire blockchain from the genesis block, by rescanning all the block files. This may take several hours to days, depending on your hardware. You need to restart ArnakWallet for this to take effect</source>
+        <translation>Tüm blok dosyalarını yeniden tarayarak blok zincirini genesis bloğundan yeniden oluşturun. Bu, donanımınıza bağlı olarak birkaç saat ila günler sürebilir. Bunun gerçekleşmesi için ArnakWallet’i yeniden başlatmanız gerekir</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="225"/>
