@@ -1145,8 +1145,8 @@ Yayınlanan sürümler sayfasını ziyaret etmek ister misiniz?</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="469"/>
-        <source>No ARK price was available to convert from USD</source>
-        <translation>USD&apos;den dönüştürülebilecek ARK fiyatı yok</translation>
+        <source>No ANK price was available to convert from USD</source>
+        <translation>USD&apos;den dönüştürülebilecek ANK fiyatı yok</translation>
     </message>
     <message>
         <location filename="../src/recurring.cpp" line="518"/>
@@ -1656,8 +1656,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/requestdialog.ui" line="219"/>
-        <source>Request payment from a Sapling address. You&apos;ll send a ARK 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
-        <translation>Bir Sapling adresinden ödeme talep edin. Bir arnak ödeme URI&apos;si olan bir adrese ARK 0.0001 işlemi gönderirsiniz. Adres size ödeme yaptığında Memo işleme dahil edilecektir.</translation>
+        <source>Request payment from a Sapling address. You&apos;ll send a ANK 0.0001 transaction to the address with a arnak payment URI. The memo will be included in the transaction when the address pays you.</source>
+        <translation>Bir Sapling adresinden ödeme talep edin. Bir arnak ödeme URI&apos;si olan bir adrese ANK 0.0001 işlemi gönderirsiniz. Adres size ödeme yaptığında Memo işleme dahil edilecektir.</translation>
     </message>
     <message>
         <location filename="../src/requestdialog.cpp" line="50"/>
@@ -1754,13 +1754,13 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/settings.ui" line="273"/>
-        <source>Connect to the internet to fetch ARK prices</source>
-        <translation>ARK fiyatlarını çekmek için internete bağlanır</translation>
+        <source>Connect to the internet to fetch ANK prices</source>
+        <translation>ANK fiyatlarını çekmek için internete bağlanır</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="280"/>
-        <source>Fetch ARK / USD prices</source>
-        <translation>ARK / USD fiyatlarını çek</translation>
+        <source>Fetch ANK / USD prices</source>
+        <translation>ANK / USD fiyatlarını çek</translation>
     </message>
     <message>
         <location filename="../src/settings.ui" line="288"/>
@@ -2060,8 +2060,8 @@ Onaylanmamış fonunuz var veya otomatik geçiş için bakiye çok düşük.</tr
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="112"/>
-        <source>Allow connections to the internet to check for updates, get ARK/USD prices etc...</source>
-        <translation>ARK/USD fiyatlarını çekme, güncellemeleri denetleme vb. işlemler için internete bağlanmaya izin ver</translation>
+        <source>Allow connections to the internet to check for updates, get ANK/USD prices etc...</source>
+        <translation>ANK/USD fiyatlarını çekme, güncellemeleri denetleme vb. işlemler için internete bağlanmaya izin ver</translation>
     </message>
     <message>
         <location filename="../src/createzcashconfdialog.ui" line="119"/>

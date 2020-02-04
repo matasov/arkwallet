@@ -711,7 +711,7 @@ void Controller::checkForUpdate(bool silent) {
     });
 }
 
-// Get the ARK->USD price from coinmarketcap using their API
+// Get the ANK->USD price from coinmarketcap using their API
 void Controller::refreshZECPrice() {
     if (!zrpc->haveConnection()) 
         return noConnection();

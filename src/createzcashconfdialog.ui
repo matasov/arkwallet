@@ -109,7 +109,7 @@
       <item row="5" column="0">
        <widget class="QLabel" name="label_6">
         <property name="text">
-         <string>Allow connections to the internet to check for updates, get ARK/USD prices etc...</string>
+         <string>Allow connections to the internet to check for updates, get ANK/USD prices etc...</string>
         </property>
        </widget>
       </item>

@@ -633,7 +633,7 @@ bool MainWindow::confirmTx(Tx tx, RecurringPaymentInfo* rpi) {
             Addr->setFont(fixedFont);
             confirm.gridLayout->addWidget(Addr, row, 0, 1, 1);
 
-            // Amount (ARK)
+            // Amount (ANK)
             auto Amt = new QLabel(confirm.sendToAddrs);
             Amt->setObjectName(QString("Amt") % QString::number(i + 1));
             Amt->setText(Settings::getZECDisplayFormat(toAddr.amount));

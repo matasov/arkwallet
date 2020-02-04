@@ -8,7 +8,7 @@
 
 using json = nlohmann::json;
 
-// Need at least 0.0005 ARK for this
+// Need at least 0.0005 ANK for this
 double Turnstile::minMigrationAmount = 0.0005;
 
 // Methods for arnakd native Migration

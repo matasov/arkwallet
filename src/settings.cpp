@@ -58,7 +58,7 @@ bool Settings::isSaplingAddress(QString addr) {
         return false;
 
     return ( isTestnet() && addr.startsWith("ztestsapling")) ||
-           (!isTestnet() && addr.startsWith("zs"));
+           (!isTestnet() && addr.startsWith("hs"));
 }
 
 bool Settings::isSproutAddress(QString addr) {
@@ -256,7 +256,7 @@ QString Settings::getTokenName() {
     if (Settings::getInstance()->isTestnet()) {
         return "TAZ";
     } else {
-        return "ARK";
+        return "ANK";
     }
 }
 
@@ -343,10 +343,10 @@ bool Settings::isValidSaplingPrivateKey(QString pk) {
 }
 
 bool Settings::isValidAddress(QString addr) {
-    QRegExp zcexp("^z[a-z0-9]{94}$",  Qt::CaseInsensitive);
-    QRegExp zsexp("^z[a-z0-9]{77}$",  Qt::CaseInsensitive);
+    QRegExp zcexp("^h[a-z0-9]{94}$",  Qt::CaseInsensitive);
+    QRegExp zsexp("^h[a-z0-9]{77}$",  Qt::CaseInsensitive);
     QRegExp ztsexp("^ztestsapling[a-z0-9]{76}", Qt::CaseInsensitive);
-    QRegExp texp("^t[a-z0-9]{34}$", Qt::CaseInsensitive);
+    QRegExp texp("^v[a-z0-9]{34}$", Qt::CaseInsensitive);
 
     return  zcexp.exactMatch(addr)  || texp.exactMatch(addr) || 
             ztsexp.exactMatch(addr) || zsexp.exactMatch(addr);
